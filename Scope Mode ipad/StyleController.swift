@@ -8,6 +8,7 @@ class StyleController: UIViewController {
     var clientNameVar = String()
     var videoTypeVar = String()
     var timeVar = String()
+    var deadlineVar = String()
     
     
     

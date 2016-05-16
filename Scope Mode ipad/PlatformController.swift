@@ -7,6 +7,7 @@ class PlatformController: UIViewController {
     var videoTypeVar = String()
     var timeVar = String()
     var platformVar = String()
+    var deadlineVar = String()
     
     
     @IBOutlet weak var tvSwitch: UISwitch!

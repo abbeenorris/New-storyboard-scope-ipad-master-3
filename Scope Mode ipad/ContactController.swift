@@ -7,6 +7,7 @@ class ContactController: UIViewController, MFMailComposeViewControllerDelegate {
     var clientNameVar = String()
     var videoTypeVar = String()
     var timeVar = String()
+    var deadlineVar = String()
     var budgetVar = String()
     var platformVar = String()
     var projectTitle = String()

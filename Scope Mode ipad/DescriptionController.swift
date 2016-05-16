@@ -6,11 +6,12 @@ class DescriptionController: UIViewController {
     var clientNameVar = String()
     var videoTypeVar = String()
     var timeVar = String()
+    var deadlineVar = String()
     @IBOutlet weak var descriptionText: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-           
+           print(deadlineVar)
     }
    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

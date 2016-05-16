@@ -6,8 +6,10 @@ class BudgetController: UIViewController {
     var clientNameVar = String()
     var videoTypeVar = String()
     var timeVar = String()
+    var deadlineVar = String()
     var platformVar = String()
     var budgetVar = String()
+    
     
     @IBOutlet weak var budgetSlider: UISlider!
     @IBOutlet weak var budgetLabel: UILabel!

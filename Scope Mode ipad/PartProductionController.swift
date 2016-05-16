@@ -6,6 +6,7 @@ class PartProductionController: UIViewController {
     var clientNameVar = String()
     var videoTypeVar = String()
     var timeVar = String()
+    var deadlineVar = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()

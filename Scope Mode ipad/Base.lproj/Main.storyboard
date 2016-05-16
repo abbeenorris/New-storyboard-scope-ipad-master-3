@@ -1545,7 +1545,7 @@
                                 <color key="progressTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="trackTintColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="3td-nb-gb9">
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="3td-nb-gb9">
                                 <rect key="frame" x="100" y="360" width="824" height="223"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="223" id="UMS-EQ-4SB"/>
@@ -1553,6 +1553,9 @@
                                 <date key="date" timeIntervalSinceReferenceDate="484656452.76037902">
                                     <!--2016-05-11 10:47:32 +0000-->
                                 </date>
+                                <connections>
+                                    <action selector="deadlinePickerAction:" destination="5lS-Pi-mrj" eventType="valueChanged" id="DZK-gj-z7L"/>
+                                </connections>
                             </datePicker>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your estimated deadline? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAQ-I9-MAB">
                                 <rect key="frame" x="286" y="262" width="452" height="37"/>
@@ -1590,6 +1593,9 @@
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="deadlinePicker" destination="3td-nb-gb9" id="FDH-tz-Ekt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dk2-ew-7vw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
