@@ -1,5 +1,3 @@
-// Hi kt, the code on this page doens't work, it wont pass the data in projectTitleVar(the data comes from ProjectNameConttroller and is passed through all the controllers up until this point) the problem is that we have 3 buttons on the page all going to different view controllers so i put the code to pass the data to the correct view controller into a action button which is linked to the right segue but this doesn't work. Could you ask Kyle about this? thanks Sam.
-
 import Foundation
 import UIKit
 
@@ -11,6 +9,8 @@ class StyleController: UIViewController {
     var deadlineVar = String()
     var descriptionVar = String()
     var partVar = String()
+    var styleVar = String()
+    
     
     
     
@@ -23,6 +23,9 @@ class StyleController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "LiveAction" {
+            
+            styleVar = "Live Action"
+            
             let destViewController = segue.destinationViewController as! CharactersController
             destViewController.projectTitleVar = projectTitleVar
             
@@ -43,18 +46,69 @@ class StyleController: UIViewController {
             
             let partProduction : CharactersController = segue.destinationViewController as! CharactersController
             partProduction.partVar = partVar
+            
+            let style : CharactersController = segue.destinationViewController as! CharactersController
+            style.styleVar = styleVar
         }
         
         if segue.identifier == "Animation" {
+            
+            styleVar = "Animation"
+            
             let destViewController = segue.destinationViewController as! CharactersController
             destViewController.projectTitleVar = projectTitleVar
+            
+            let clientName : CharactersController = segue.destinationViewController as! CharactersController
+            clientName.clientNameVar = clientNameVar
+            
+            let videoType : CharactersController = segue.destinationViewController as! CharactersController
+            videoType.videoTypeVar = videoTypeVar
+            
+            let runningTime : CharactersController = segue.destinationViewController as! CharactersController
+            runningTime.timeVar = timeVar
+            
+            let deadline : CharactersController = segue.destinationViewController as! CharactersController
+            deadline.deadlineVar = deadlineVar
+            
+            let videoDescription : CharactersController = segue.destinationViewController as! CharactersController
+            videoDescription.descriptionVar = descriptionVar
+            
+            let partProduction : CharactersController = segue.destinationViewController as! CharactersController
+            partProduction.partVar = partVar
+            
+            let style : CharactersController = segue.destinationViewController as! CharactersController
+            style.styleVar = styleVar
             
 
         }
         
         if segue.identifier == "MixedMedia" {
+            
+            styleVar = "Mixed Media"
+            
             let destViewController = segue.destinationViewController as! CharactersController
             destViewController.projectTitleVar = projectTitleVar
+            
+            let clientName : CharactersController = segue.destinationViewController as! CharactersController
+            clientName.clientNameVar = clientNameVar
+            
+            let videoType : CharactersController = segue.destinationViewController as! CharactersController
+            videoType.videoTypeVar = videoTypeVar
+            
+            let runningTime : CharactersController = segue.destinationViewController as! CharactersController
+            runningTime.timeVar = timeVar
+            
+            let deadline : CharactersController = segue.destinationViewController as! CharactersController
+            deadline.deadlineVar = deadlineVar
+            
+            let videoDescription : CharactersController = segue.destinationViewController as! CharactersController
+            videoDescription.descriptionVar = descriptionVar
+            
+            let partProduction : CharactersController = segue.destinationViewController as! CharactersController
+            partProduction.partVar = partVar
+            
+            let style : CharactersController = segue.destinationViewController as! CharactersController
+            style.styleVar = styleVar
         }
         
         

@@ -11,6 +11,7 @@ class SummaryController: UIViewController {
     var platformVar = String()
     var budgetVar = String()
     var partVar = String()
+    var styleVar = String()
     
     @IBOutlet weak var projectText: UITextField!
     @IBOutlet weak var videoTypeText: UITextField!

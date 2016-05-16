@@ -9,6 +9,7 @@ class CharactersController: UIViewController {
     var deadlineVar = String()
     var descriptionVar = String()
     var partVar = String()
+    var styleVar = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +37,9 @@ class CharactersController: UIViewController {
         
         let partProduction : PlatformController = segue.destinationViewController as! PlatformController
         partProduction.partVar = partVar
+        
+        let style : PlatformController = segue.destinationViewController as! PlatformController
+        style.styleVar = styleVar
     }
     
 }

@@ -13,6 +13,7 @@ class ContactController: UIViewController, MFMailComposeViewControllerDelegate {
     var platformVar = String()
     var projectTitle = String()
     var partVar = String()
+    var styleVar = String()
     
     
     
@@ -84,6 +85,9 @@ class ContactController: UIViewController, MFMailComposeViewControllerDelegate {
         
         let partProduction : SummaryController = segue.destinationViewController as! SummaryController
         partProduction.partVar = partVar
+        
+        let style : SummaryController = segue.destinationViewController as! SummaryController
+        style.styleVar = styleVar
     }
     
 }

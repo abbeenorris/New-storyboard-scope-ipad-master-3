@@ -10,6 +10,7 @@ class PlatformController: UIViewController {
     var deadlineVar = String()
     var descriptionVar = String()
     var partVar = String()
+    var styleVar = String()
     
     
     @IBOutlet weak var tvSwitch: UISwitch!
@@ -99,6 +100,9 @@ class PlatformController: UIViewController {
         
         let partProduction : BudgetController = segue.destinationViewController as! BudgetController
         partProduction.partVar = partVar
+        
+        let style : BudgetController = segue.destinationViewController as! BudgetController
+        style.styleVar = styleVar
         
     }
 }
