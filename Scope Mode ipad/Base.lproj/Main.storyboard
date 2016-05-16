@@ -912,7 +912,7 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2M8-aJ-3NI">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Contact Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2M8-aJ-3NI">
                                 <rect key="frame" x="409" y="237" width="207" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="Iig-Ao-7Ny"/>
@@ -929,31 +929,31 @@
                                 <color key="progressTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="trackTintColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Client name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kbn-x8-vcR">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Client name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kbn-x8-vcR">
                                 <rect key="frame" x="221" y="339" width="91" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="icm-tS-2Rj">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Company name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="icm-tS-2Rj">
                                 <rect key="frame" x="221" y="408" width="120" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUj-Ug-gXc">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUj-Ug-gXc">
                                 <rect key="frame" x="222" y="475" width="41" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="me0-Jx-Uzn">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Phone number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="me0-Jx-Uzn">
                                 <rect key="frame" x="221" y="547" width="112" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cSL-Qw-6Xb">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cSL-Qw-6Xb">
                                 <rect key="frame" x="510" y="335" width="294" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="294" id="BsS-bP-ubd"/>
@@ -961,28 +961,21 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gFO-DK-tzw">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gFO-DK-tzw">
                                 <rect key="frame" x="510" y="404" width="294" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6fm-hc-8Ki">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6fm-hc-8Ki">
                                 <rect key="frame" x="510" y="472" width="294" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uap-G9-rxR">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uap-G9-rxR">
                                 <rect key="frame" x="510" y="543" width="294" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6lv-zI-S7Z">
-                                <rect key="frame" x="755" y="587" width="49" height="30"/>
-                                <state key="normal" title="Submit"/>
-                                <connections>
-                                    <action selector="sendEmailButtonTapped:" destination="c7x-48-w2Y" eventType="touchUpInside" id="kei-T0-QEK"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nA5-sK-cXK">
                                 <rect key="frame" x="766" y="630" width="30" height="30"/>
                                 <state key="normal" title="next"/>
@@ -996,9 +989,7 @@
                             <constraint firstItem="cSL-Qw-6Xb" firstAttribute="trailing" secondItem="gFO-DK-tzw" secondAttribute="trailing" id="0F5-ZB-eDO"/>
                             <constraint firstAttribute="trailing" secondItem="GhN-50-b0U" secondAttribute="trailing" id="0xz-Kb-ZRf"/>
                             <constraint firstItem="2M8-aJ-3NI" firstAttribute="top" secondItem="GhN-50-b0U" secondAttribute="bottom" constant="30" id="6Fe-P6-068"/>
-                            <constraint firstItem="nA5-sK-cXK" firstAttribute="top" secondItem="6lv-zI-S7Z" secondAttribute="bottom" constant="13" id="7Lm-s1-Coj"/>
                             <constraint firstItem="cSL-Qw-6Xb" firstAttribute="leading" secondItem="gFO-DK-tzw" secondAttribute="leading" id="AYP-Ah-r4e"/>
-                            <constraint firstItem="6lv-zI-S7Z" firstAttribute="top" secondItem="uap-G9-rxR" secondAttribute="bottom" constant="14" id="Bza-Wg-W4f"/>
                             <constraint firstItem="gFO-DK-tzw" firstAttribute="top" secondItem="cSL-Qw-6Xb" secondAttribute="bottom" constant="39" id="DGV-Fw-GoU"/>
                             <constraint firstItem="Kbn-x8-vcR" firstAttribute="leading" secondItem="icm-tS-2Rj" secondAttribute="leading" id="EHG-vz-bb8"/>
                             <constraint firstItem="icm-tS-2Rj" firstAttribute="leading" secondItem="me0-Jx-Uzn" secondAttribute="leading" id="EkW-Bc-UOW"/>
@@ -1011,7 +1002,6 @@
                             <constraint firstItem="th0-IF-KdS" firstAttribute="top" secondItem="nA5-sK-cXK" secondAttribute="bottom" constant="64" id="Rwu-8e-8wA"/>
                             <constraint firstItem="6fm-hc-8Ki" firstAttribute="leading" secondItem="uap-G9-rxR" secondAttribute="leading" id="SPd-5P-cYb"/>
                             <constraint firstItem="3g5-yP-0CS" firstAttribute="top" secondItem="th0-IF-KdS" secondAttribute="bottom" constant="28" id="SiQ-Gg-vCQ"/>
-                            <constraint firstItem="uap-G9-rxR" firstAttribute="trailing" secondItem="6lv-zI-S7Z" secondAttribute="trailing" id="UyC-Rt-ovN"/>
                             <constraint firstItem="6fm-hc-8Ki" firstAttribute="top" secondItem="gFO-DK-tzw" secondAttribute="bottom" constant="38" id="Wry-KM-DLP"/>
                             <constraint firstItem="JUj-Ug-gXc" firstAttribute="baseline" secondItem="6fm-hc-8Ki" secondAttribute="baseline" id="Yz2-EM-ZHs"/>
                             <constraint firstItem="6fm-hc-8Ki" firstAttribute="trailing" secondItem="uap-G9-rxR" secondAttribute="trailing" id="Zpy-Qv-cm1"/>
@@ -1252,6 +1242,7 @@
                                 <state key="normal" title="Submit"/>
                                 <connections>
                                     <action selector="sendEmailButtonTapped:" destination="c7x-48-w2Y" eventType="touchUpInside" id="S6H-fo-xzu"/>
+                                    <action selector="sendEmailButtonTapped:" destination="QMS-0f-ith" eventType="touchUpInside" id="qzl-9o-6QL"/>
                                 </connections>
                             </button>
                         </subviews>
