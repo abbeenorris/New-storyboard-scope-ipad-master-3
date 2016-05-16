@@ -11,7 +11,9 @@ class RunningTimeController: UIViewController, UIPickerViewDelegate {
     @IBOutlet weak var runningTimePicker: UIDatePicker!
     let timeFormatter = NSDateFormatter()
     @IBAction func runningTimePickerTime(sender: AnyObject) {
+        
         setTime()
+    
     }
     
     
@@ -27,7 +29,6 @@ class RunningTimeController: UIViewController, UIPickerViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

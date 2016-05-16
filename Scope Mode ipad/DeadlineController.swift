@@ -9,6 +9,7 @@ class DeadlineController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(timeVar)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
