@@ -10,7 +10,18 @@ class CharactersController: UIViewController {
     var descriptionVar = String()
     var partVar = String()
     var styleVar = String()
+    var characterVar = String()
     
+    @IBOutlet weak var characterSlider: UISlider!
+    @IBOutlet weak var characterText: UILabel!
+    
+    
+    @IBAction func characterSliderChanged(sender: AnyObject) {
+        let currentlVaule = characterSlider.value
+        characterText.text! = "\(currentlVaule)"
+        characterVar = characterText.text!
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
            
@@ -40,6 +51,9 @@ class CharactersController: UIViewController {
         
         let style : PlatformController = segue.destinationViewController as! PlatformController
         style.styleVar = styleVar
+        
+        let character : PlatformController = segue.destinationViewController as! PlatformController
+        character.characterVar =  characterVar
     }
     
 }

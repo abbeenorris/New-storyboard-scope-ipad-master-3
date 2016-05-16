@@ -12,6 +12,7 @@ class BudgetController: UIViewController {
     var descriptionVar = String()
     var partVar = String()
     var styleVar = String()
+    var characterVar = String()
     
     @IBOutlet weak var budgetSlider: UISlider!
     @IBOutlet weak var budgetLabel: UILabel!
@@ -51,6 +52,10 @@ class BudgetController: UIViewController {
         
         let style : ContactController = segue.destinationViewController as! ContactController
         style.styleVar = styleVar
+        
+        let character : ContactController = segue.destinationViewController as! ContactController
+        character.characterVar =  characterVar
+
         
         
     }

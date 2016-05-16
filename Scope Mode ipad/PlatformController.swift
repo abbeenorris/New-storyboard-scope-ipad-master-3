@@ -11,6 +11,7 @@ class PlatformController: UIViewController {
     var descriptionVar = String()
     var partVar = String()
     var styleVar = String()
+    var characterVar = String()
     
     
     @IBOutlet weak var tvSwitch: UISwitch!
@@ -103,6 +104,10 @@ class PlatformController: UIViewController {
         
         let style : BudgetController = segue.destinationViewController as! BudgetController
         style.styleVar = styleVar
+        
+        let character : BudgetController = segue.destinationViewController as! BudgetController
+        character.characterVar =  characterVar
+
         
     }
 }

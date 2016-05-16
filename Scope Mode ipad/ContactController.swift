@@ -14,6 +14,7 @@ class ContactController: UIViewController, MFMailComposeViewControllerDelegate {
     var projectTitle = String()
     var partVar = String()
     var styleVar = String()
+    var characterVar = String()
     
     
     
@@ -88,6 +89,9 @@ class ContactController: UIViewController, MFMailComposeViewControllerDelegate {
         
         let style : SummaryController = segue.destinationViewController as! SummaryController
         style.styleVar = styleVar
+        
+        let character : SummaryController = segue.destinationViewController as! SummaryController
+        character.characterVar = characterVar
     }
     
 }
