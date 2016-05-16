@@ -15,7 +15,7 @@ class ContactController: UIViewController, MFMailComposeViewControllerDelegate {
     var partVar = String()
     var styleVar = String()
     var characterVar = String()
-    
+    var settingVar = String()
     
     
     
@@ -92,6 +92,9 @@ class ContactController: UIViewController, MFMailComposeViewControllerDelegate {
         
         let character : SummaryController = segue.destinationViewController as! SummaryController
         character.characterVar = characterVar
+        
+        let setting : BudgetController = segue.destinationViewController as! BudgetController
+        setting.settingVar =  settingVar
     }
     
 }

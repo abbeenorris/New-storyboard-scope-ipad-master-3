@@ -13,6 +13,7 @@ class SummaryController: UIViewController {
     var partVar = String()
     var styleVar = String()
     var characterVar = String()
+    var settingVar = String()
     
     @IBOutlet weak var projectText: UITextField!
     @IBOutlet weak var videoTypeText: UITextField!

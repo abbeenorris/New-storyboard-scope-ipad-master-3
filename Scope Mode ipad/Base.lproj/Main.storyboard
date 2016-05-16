@@ -740,6 +740,7 @@
                     <connections>
                         <outlet property="characterSlider" destination="wcE-JI-ooI" id="gv7-Ep-FSE"/>
                         <outlet property="characterText" destination="ppu-fi-ESt" id="8Ev-Hx-vOd"/>
+                        <outlet property="settingText" destination="AJk-SS-ec1" id="1sw-An-eyU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0pV-S4-Z1U" userLabel="First Responder" sceneMemberID="firstResponder"/>
