@@ -7,6 +7,7 @@ class CharactersController: UIViewController {
     var videoTypeVar = String()
     var timeVar = String()
     var deadlineVar = String()
+    var descriptionVar = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +29,9 @@ class CharactersController: UIViewController {
         
         let deadline : PlatformController = segue.destinationViewController as! PlatformController
         deadline.deadlineVar = deadlineVar
+        
+        let videoDescription : PlatformController = segue.destinationViewController as! PlatformController
+        videoDescription.descriptionVar = descriptionVar
     }
     
 }

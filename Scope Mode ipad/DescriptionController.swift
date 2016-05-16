@@ -36,5 +36,8 @@ class DescriptionController: UIViewController {
         let deadline : PartProductionController = segue.destinationViewController as! PartProductionController
         deadline.deadlineVar = deadlineVar
         
+        let videoDescription : PartProductionController = segue.destinationViewController as! PartProductionController
+        videoDescription.descriptionVar = descriptionVar
+        
     }
 }

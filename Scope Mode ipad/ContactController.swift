@@ -8,6 +8,7 @@ class ContactController: UIViewController, MFMailComposeViewControllerDelegate {
     var videoTypeVar = String()
     var timeVar = String()
     var deadlineVar = String()
+    var descriptionVar = String()
     var budgetVar = String()
     var platformVar = String()
     var projectTitle = String()
@@ -76,6 +77,9 @@ class ContactController: UIViewController, MFMailComposeViewControllerDelegate {
         
         let deadline : SummaryController = segue.destinationViewController as! SummaryController
         deadline.deadlineVar = deadlineVar
+        
+        let videoDescription : SummaryController = segue.destinationViewController as! SummaryController
+        videoDescription.descriptionVar = descriptionVar
     }
     
 }

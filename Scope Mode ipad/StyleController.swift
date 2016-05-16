@@ -9,6 +9,7 @@ class StyleController: UIViewController {
     var videoTypeVar = String()
     var timeVar = String()
     var deadlineVar = String()
+    var descriptionVar = String()
     
     
     
@@ -35,6 +36,9 @@ class StyleController: UIViewController {
             
             let deadline : CharactersController = segue.destinationViewController as! CharactersController
             deadline.deadlineVar = deadlineVar
+            
+            let videoDescription : CharactersController = segue.destinationViewController as! CharactersController
+            videoDescription.descriptionVar = descriptionVar
         }
         
         if segue.identifier == "Animation" {

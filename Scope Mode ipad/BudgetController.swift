@@ -9,7 +9,7 @@ class BudgetController: UIViewController {
     var deadlineVar = String()
     var platformVar = String()
     var budgetVar = String()
-    
+    var descriptionVar = String()
     
     @IBOutlet weak var budgetSlider: UISlider!
     @IBOutlet weak var budgetLabel: UILabel!
@@ -40,6 +40,9 @@ class BudgetController: UIViewController {
         
         let deadline : ContactController = segue.destinationViewController as! ContactController
         deadline.deadlineVar = deadlineVar
+        
+        let videoDescription : ContactController = segue.destinationViewController as! ContactController
+        videoDescription.descriptionVar = descriptionVar
         
         let budget : ContactController = segue.destinationViewController as! ContactController
         budget.budgetVar = budgetVar

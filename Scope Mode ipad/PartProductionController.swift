@@ -7,6 +7,7 @@ class PartProductionController: UIViewController {
     var videoTypeVar = String()
     var timeVar = String()
     var deadlineVar = String()
+    var descriptionVar = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,5 +29,8 @@ class PartProductionController: UIViewController {
         
         let deadline : StyleController = segue.destinationViewController as! StyleController
         deadline.deadlineVar = deadlineVar
+        
+        let videoDescription : StyleController = segue.destinationViewController as! StyleController
+        videoDescription.descriptionVar = descriptionVar
     }
 }
