@@ -15,33 +15,45 @@ class SummaryController: UIViewController, MFMailComposeViewControllerDelegate {
     var styleVar = String()
     var characterVar = String()
     var settingVar = String()
+    var companyVar = String()
+    var emailVar = String()
+    var phoneNumberVar = String()
     
     @IBOutlet weak var projectText: UITextField!
+    @IBOutlet weak var clientText: UITextField!
     @IBOutlet weak var videoTypeText: UITextField!
     @IBOutlet weak var budgetText: UITextField!
     @IBOutlet weak var platformText: UITextField!
-    @IBOutlet weak var DescriptionText: UITextField!
+    @IBOutlet weak var descriptionText: UITextField!
     @IBOutlet weak var styleText: UITextField!
-    @IBOutlet weak var styleContinunedText: UITextField!
     @IBOutlet weak var charactersText: UITextField!
-    @IBOutlet weak var preProductionText: UITextField!
-    @IBOutlet weak var scenesText: UITextField!
+    @IBOutlet weak var settingText: UITextField!
     @IBOutlet weak var partProductionText: UITextField!
     @IBOutlet weak var deadlineText: UITextField!
-    @IBOutlet weak var postProductionText: UITextField!
     @IBOutlet weak var runningTimeText: UITextField!
-    @IBOutlet weak var videoSelectedText: UITextField!
+    @IBOutlet weak var companyNameText: UITextField!
+    @IBOutlet weak var emailText: UITextField!
+    @IBOutlet weak var phoneNumberText: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
         projectText.text! = projectTitleVar
-        //clientText.text! = clientNameVar
+        clientText.text! = clientNameVar
         videoTypeText.text! = videoTypeVar
-        platformText.text! = platformVar
-        budgetText.text! = budgetVar
         runningTimeText.text! = timeVar
         deadlineText.text! = deadlineVar
+        descriptionText.text! = descriptionVar
+        partProductionText.text! = partVar
+        styleText.text! = styleVar
+        charactersText.text! = characterVar
+        settingText.text! = settingVar
+        platformText.text! = platformVar
+        budgetText.text! = budgetVar
+        companyNameText.text! = companyVar
+        emailText.text! = emailVar
+        phoneNumberText.text! = phoneNumberVar
         
         
         

@@ -47,10 +47,13 @@ class VideoTypeController: UIViewController {
    
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
         let projectTitle : RunningTimeController = segue.destinationViewController as! RunningTimeController
         projectTitle.projectTitleVar = projectTitleVar
+        
         let clientName : RunningTimeController = segue.destinationViewController as! RunningTimeController
         clientName.clientNameVar = clientNameVar
+        
         let videoType : RunningTimeController = segue.destinationViewController as! RunningTimeController
         videoType.videoTypeVar = videoTypeVar
         

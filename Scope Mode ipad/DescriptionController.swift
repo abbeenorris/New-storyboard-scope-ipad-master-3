@@ -14,7 +14,7 @@ class DescriptionController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       descriptionVar = descriptionText.text!
+  
         
     }
    
@@ -37,7 +37,7 @@ class DescriptionController: UIViewController {
         deadline.deadlineVar = deadlineVar
         
         let videoDescription : PartProductionController = segue.destinationViewController as! PartProductionController
-        videoDescription.descriptionVar = descriptionVar
+        videoDescription.descriptionVar = descriptionText.text!
         
     }
 }

@@ -14,19 +14,27 @@ class ContactController: UIViewController {
     var styleVar = String()
     var characterVar = String()
     var settingVar = String()
+    var companyVar = String()
+    var emailVar = String()
+    var phoneNumberVar = String()
     
+    
+    
+    
+    
+    @IBOutlet weak var clientName: UITextField!
+    @IBOutlet weak var companyName: UITextField!
+    @IBOutlet weak var email: UITextField!
+    @IBOutlet weak var phoneNumber: UITextField!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        projectTitle = projectTitleVar
+        clientName.text! = clientNameVar
+        companyVar = companyName.text!
+        emailVar = email.text!
+        phoneNumberVar = phoneNumber.text!
     }
-    
-    
-    
-    
-    
     
     
     
@@ -58,8 +66,23 @@ class ContactController: UIViewController {
         let character : SummaryController = segue.destinationViewController as! SummaryController
         character.characterVar = characterVar
         
-        let setting : BudgetController = segue.destinationViewController as! BudgetController
+        let budget : SummaryController = segue.destinationViewController as! SummaryController
+        budget.budgetVar = budgetVar
+        
+        let setting : SummaryController = segue.destinationViewController as! SummaryController
         setting.settingVar =  settingVar
+        
+        let company : SummaryController = segue.destinationViewController as! SummaryController
+        company.companyVar =  companyVar
+        
+        let email : SummaryController = segue.destinationViewController as! SummaryController
+        company.emailVar =  emailVar
+        
+        let phone : SummaryController = segue.destinationViewController as! SummaryController
+        phone.phoneNumberVar =  phoneNumberVar
+
+
+        
     }
     
 }

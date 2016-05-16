@@ -12,6 +12,7 @@ class ProjectNameController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let projectTitle : VideoTypeController = segue.destinationViewController as! VideoTypeController
         projectTitle.projectTitleVar = projectTextfield.text!
+        
         let clientName : VideoTypeController = segue.destinationViewController as! VideoTypeController
         clientName.clientNameVar = clientNameTextField.text!
         

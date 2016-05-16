@@ -48,6 +48,9 @@ class BudgetController: UIViewController {
         let videoDescription : ContactController = segue.destinationViewController as! ContactController
         videoDescription.descriptionVar = descriptionVar
         
+        let partProduction : ContactController = segue.destinationViewController as! ContactController
+        partProduction.partVar = partVar
+        
         let budget : ContactController = segue.destinationViewController as! ContactController
         budget.budgetVar = budgetVar
         
@@ -57,7 +60,7 @@ class BudgetController: UIViewController {
         let character : ContactController = segue.destinationViewController as! ContactController
         character.characterVar =  characterVar
         
-        let setting : BudgetController = segue.destinationViewController as! BudgetController
+        let setting : ContactController = segue.destinationViewController as! ContactController
         setting.settingVar =  settingVar
 
         
