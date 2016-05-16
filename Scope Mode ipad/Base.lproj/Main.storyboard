@@ -386,17 +386,6 @@
                                 <color key="progressTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="trackTintColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="100" minValue="100" maxValue="50000" translatesAutoresizingMaskIntoConstraints="NO" id="tD4-yH-j8C">
-                                <rect key="frame" x="147" y="394" width="730" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="726" id="Ix6-LL-aWh"/>
-                                </constraints>
-                                <color key="minimumTrackTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="maximumTrackTintColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <action selector="BudgetChanged:" destination="LpJ-Tb-COa" eventType="valueChanged" id="aYj-qn-ryC"/>
-                                </connections>
-                            </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="£100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="54J-qc-nUP">
                                 <rect key="frame" x="149" y="432" width="726" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -410,6 +399,17 @@
                                     <segue destination="c7x-48-w2Y" kind="show" id="hxI-hI-Jxu"/>
                                 </connections>
                             </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="100" minValue="100" maxValue="1000" translatesAutoresizingMaskIntoConstraints="NO" id="tD4-yH-j8C">
+                                <rect key="frame" x="147" y="394" width="730" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="726" id="Ix6-LL-aWh"/>
+                                </constraints>
+                                <color key="minimumTrackTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="maximumTrackTintColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="BudgetChanged:" destination="LpJ-Tb-COa" eventType="valueChanged" id="aYj-qn-ryC"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
