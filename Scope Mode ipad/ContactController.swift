@@ -66,6 +66,9 @@ class ContactController: UIViewController {
         let character : SummaryController = segue.destinationViewController as! SummaryController
         character.characterVar = characterVar
         
+        let platform : SummaryController = segue.destinationViewController as! SummaryController
+        platform.platformVar = platformVar
+        
         let budget : SummaryController = segue.destinationViewController as! SummaryController
         budget.budgetVar = budgetVar
         

@@ -60,6 +60,9 @@ class BudgetController: UIViewController {
         let character : ContactController = segue.destinationViewController as! ContactController
         character.characterVar =  characterVar
         
+        let platform : ContactController = segue.destinationViewController as! ContactController
+        platform.platformVar = platformVar
+        
         let setting : ContactController = segue.destinationViewController as! ContactController
         setting.settingVar =  settingVar
 
