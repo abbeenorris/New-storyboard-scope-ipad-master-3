@@ -1,0 +1,562 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E4202FB1CE3B18500B3DE8F /* VideoTypeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4202FA1CE3B18500B3DE8F /* VideoTypeController.swift */; };
+		7E4202FD1CE3B3C400B3DE8F /* BudgetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4202FC1CE3B3C400B3DE8F /* BudgetController.swift */; };
+		7E4202FF1CE3B63B00B3DE8F /* PlatformController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4202FE1CE3B63B00B3DE8F /* PlatformController.swift */; };
+		7E4203011CE3B6F300B3DE8F /* DescriptionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4203001CE3B6F300B3DE8F /* DescriptionController.swift */; };
+		7E4203031CE3B81B00B3DE8F /* StyleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4203021CE3B81B00B3DE8F /* StyleController.swift */; };
+		7E42030D1CE3C48900B3DE8F /* CharactersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E42030C1CE3C48900B3DE8F /* CharactersController.swift */; };
+		7E4203131CE3C52800B3DE8F /* PartProductionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4203121CE3C52800B3DE8F /* PartProductionController.swift */; };
+		7E4203151CE3C55E00B3DE8F /* DeadlineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4203141CE3C55E00B3DE8F /* DeadlineController.swift */; };
+		7E4203191CE3C5A600B3DE8F /* RunningTimeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4203181CE3C5A600B3DE8F /* RunningTimeController.swift */; };
+		7E42031B1CE3C5C600B3DE8F /* SummaryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E42031A1CE3C5C600B3DE8F /* SummaryController.swift */; };
+		7E42031D1CE3C85A00B3DE8F /* ContactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E42031C1CE3C85A00B3DE8F /* ContactController.swift */; };
+		F2C2E5301CE3270000F93776 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C2E52F1CE3270000F93776 /* AppDelegate.swift */; };
+		F2C2E5321CE3270000F93776 /* ProjectNameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C2E5311CE3270000F93776 /* ProjectNameController.swift */; };
+		F2C2E5351CE3270000F93776 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2C2E5331CE3270000F93776 /* Main.storyboard */; };
+		F2C2E5371CE3270000F93776 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2C2E5361CE3270000F93776 /* Assets.xcassets */; };
+		F2C2E53A1CE3270000F93776 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2C2E5381CE3270000F93776 /* LaunchScreen.storyboard */; };
+		F2C2E5451CE3270000F93776 /* Scope_Mode_ipadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C2E5441CE3270000F93776 /* Scope_Mode_ipadTests.swift */; };
+		F2C2E5501CE3270000F93776 /* Scope_Mode_ipadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C2E54F1CE3270000F93776 /* Scope_Mode_ipadUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F2C2E5411CE3270000F93776 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2C2E5241CE3270000F93776 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2C2E52B1CE3270000F93776;
+			remoteInfo = "Scope Mode ipad";
+		};
+		F2C2E54C1CE3270000F93776 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2C2E5241CE3270000F93776 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2C2E52B1CE3270000F93776;
+			remoteInfo = "Scope Mode ipad";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7E4202FA1CE3B18500B3DE8F /* VideoTypeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoTypeController.swift; sourceTree = "<group>"; };
+		7E4202FC1CE3B3C400B3DE8F /* BudgetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudgetController.swift; sourceTree = "<group>"; };
+		7E4202FE1CE3B63B00B3DE8F /* PlatformController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatformController.swift; sourceTree = "<group>"; };
+		7E4203001CE3B6F300B3DE8F /* DescriptionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionController.swift; sourceTree = "<group>"; };
+		7E4203021CE3B81B00B3DE8F /* StyleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleController.swift; sourceTree = "<group>"; };
+		7E42030C1CE3C48900B3DE8F /* CharactersController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersController.swift; sourceTree = "<group>"; };
+		7E4203121CE3C52800B3DE8F /* PartProductionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartProductionController.swift; sourceTree = "<group>"; };
+		7E4203141CE3C55E00B3DE8F /* DeadlineController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeadlineController.swift; sourceTree = "<group>"; };
+		7E4203181CE3C5A600B3DE8F /* RunningTimeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunningTimeController.swift; sourceTree = "<group>"; };
+		7E42031A1CE3C5C600B3DE8F /* SummaryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryController.swift; sourceTree = "<group>"; };
+		7E42031C1CE3C85A00B3DE8F /* ContactController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactController.swift; sourceTree = "<group>"; };
+		F2C2E52C1CE3270000F93776 /* Scope Mode ipad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Scope Mode ipad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2C2E52F1CE3270000F93776 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F2C2E5311CE3270000F93776 /* ProjectNameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectNameController.swift; sourceTree = "<group>"; };
+		F2C2E5341CE3270000F93776 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F2C2E5361CE3270000F93776 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F2C2E5391CE3270000F93776 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F2C2E53B1CE3270000F93776 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2C2E5401CE3270000F93776 /* Scope Mode ipadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Scope Mode ipadTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2C2E5441CE3270000F93776 /* Scope_Mode_ipadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scope_Mode_ipadTests.swift; sourceTree = "<group>"; };
+		F2C2E5461CE3270000F93776 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2C2E54B1CE3270000F93776 /* Scope Mode ipadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Scope Mode ipadUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2C2E54F1CE3270000F93776 /* Scope_Mode_ipadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scope_Mode_ipadUITests.swift; sourceTree = "<group>"; };
+		F2C2E5511CE3270000F93776 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F2C2E5291CE3270000F93776 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2C2E53D1CE3270000F93776 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2C2E5481CE3270000F93776 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F2C2E5231CE3270000F93776 = {
+			isa = PBXGroup;
+			children = (
+				F2C2E52E1CE3270000F93776 /* Scope Mode ipad */,
+				F2C2E5431CE3270000F93776 /* Scope Mode ipadTests */,
+				F2C2E54E1CE3270000F93776 /* Scope Mode ipadUITests */,
+				F2C2E52D1CE3270000F93776 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F2C2E52D1CE3270000F93776 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2C2E52C1CE3270000F93776 /* Scope Mode ipad.app */,
+				F2C2E5401CE3270000F93776 /* Scope Mode ipadTests.xctest */,
+				F2C2E54B1CE3270000F93776 /* Scope Mode ipadUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F2C2E52E1CE3270000F93776 /* Scope Mode ipad */ = {
+			isa = PBXGroup;
+			children = (
+				F2C2E52F1CE3270000F93776 /* AppDelegate.swift */,
+				F2C2E5311CE3270000F93776 /* ProjectNameController.swift */,
+				7E4202FA1CE3B18500B3DE8F /* VideoTypeController.swift */,
+				7E4203181CE3C5A600B3DE8F /* RunningTimeController.swift */,
+				7E4203141CE3C55E00B3DE8F /* DeadlineController.swift */,
+				7E4203001CE3B6F300B3DE8F /* DescriptionController.swift */,
+				7E4203121CE3C52800B3DE8F /* PartProductionController.swift */,
+				7E4203021CE3B81B00B3DE8F /* StyleController.swift */,
+				7E42030C1CE3C48900B3DE8F /* CharactersController.swift */,
+				7E4202FE1CE3B63B00B3DE8F /* PlatformController.swift */,
+				7E4202FC1CE3B3C400B3DE8F /* BudgetController.swift */,
+				7E42031C1CE3C85A00B3DE8F /* ContactController.swift */,
+				7E42031A1CE3C5C600B3DE8F /* SummaryController.swift */,
+				F2C2E5331CE3270000F93776 /* Main.storyboard */,
+				F2C2E5381CE3270000F93776 /* LaunchScreen.storyboard */,
+				F2C2E5361CE3270000F93776 /* Assets.xcassets */,
+				F2C2E53B1CE3270000F93776 /* Info.plist */,
+			);
+			path = "Scope Mode ipad";
+			sourceTree = "<group>";
+		};
+		F2C2E5431CE3270000F93776 /* Scope Mode ipadTests */ = {
+			isa = PBXGroup;
+			children = (
+				F2C2E5441CE3270000F93776 /* Scope_Mode_ipadTests.swift */,
+				F2C2E5461CE3270000F93776 /* Info.plist */,
+			);
+			path = "Scope Mode ipadTests";
+			sourceTree = "<group>";
+		};
+		F2C2E54E1CE3270000F93776 /* Scope Mode ipadUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F2C2E54F1CE3270000F93776 /* Scope_Mode_ipadUITests.swift */,
+				F2C2E5511CE3270000F93776 /* Info.plist */,
+			);
+			path = "Scope Mode ipadUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F2C2E52B1CE3270000F93776 /* Scope Mode ipad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2C2E5541CE3270000F93776 /* Build configuration list for PBXNativeTarget "Scope Mode ipad" */;
+			buildPhases = (
+				F2C2E5281CE3270000F93776 /* Sources */,
+				F2C2E5291CE3270000F93776 /* Frameworks */,
+				F2C2E52A1CE3270000F93776 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Scope Mode ipad";
+			productName = "Scope Mode ipad";
+			productReference = F2C2E52C1CE3270000F93776 /* Scope Mode ipad.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F2C2E53F1CE3270000F93776 /* Scope Mode ipadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2C2E5571CE3270000F93776 /* Build configuration list for PBXNativeTarget "Scope Mode ipadTests" */;
+			buildPhases = (
+				F2C2E53C1CE3270000F93776 /* Sources */,
+				F2C2E53D1CE3270000F93776 /* Frameworks */,
+				F2C2E53E1CE3270000F93776 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2C2E5421CE3270000F93776 /* PBXTargetDependency */,
+			);
+			name = "Scope Mode ipadTests";
+			productName = "Scope Mode ipadTests";
+			productReference = F2C2E5401CE3270000F93776 /* Scope Mode ipadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F2C2E54A1CE3270000F93776 /* Scope Mode ipadUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2C2E55A1CE3270000F93776 /* Build configuration list for PBXNativeTarget "Scope Mode ipadUITests" */;
+			buildPhases = (
+				F2C2E5471CE3270000F93776 /* Sources */,
+				F2C2E5481CE3270000F93776 /* Frameworks */,
+				F2C2E5491CE3270000F93776 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2C2E54D1CE3270000F93776 /* PBXTargetDependency */,
+			);
+			name = "Scope Mode ipadUITests";
+			productName = "Scope Mode ipadUITests";
+			productReference = F2C2E54B1CE3270000F93776 /* Scope Mode ipadUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F2C2E5241CE3270000F93776 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Abigail Norris (i7696586)";
+				TargetAttributes = {
+					F2C2E52B1CE3270000F93776 = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = E4Y6DA7TD6;
+					};
+					F2C2E53F1CE3270000F93776 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = F2C2E52B1CE3270000F93776;
+					};
+					F2C2E54A1CE3270000F93776 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = F2C2E52B1CE3270000F93776;
+					};
+				};
+			};
+			buildConfigurationList = F2C2E5271CE3270000F93776 /* Build configuration list for PBXProject "Scope Mode ipad" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F2C2E5231CE3270000F93776;
+			productRefGroup = F2C2E52D1CE3270000F93776 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F2C2E52B1CE3270000F93776 /* Scope Mode ipad */,
+				F2C2E53F1CE3270000F93776 /* Scope Mode ipadTests */,
+				F2C2E54A1CE3270000F93776 /* Scope Mode ipadUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F2C2E52A1CE3270000F93776 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2C2E53A1CE3270000F93776 /* LaunchScreen.storyboard in Resources */,
+				F2C2E5371CE3270000F93776 /* Assets.xcassets in Resources */,
+				F2C2E5351CE3270000F93776 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2C2E53E1CE3270000F93776 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2C2E5491CE3270000F93776 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F2C2E5281CE3270000F93776 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E4202FD1CE3B3C400B3DE8F /* BudgetController.swift in Sources */,
+				7E42030D1CE3C48900B3DE8F /* CharactersController.swift in Sources */,
+				F2C2E5321CE3270000F93776 /* ProjectNameController.swift in Sources */,
+				7E4203031CE3B81B00B3DE8F /* StyleController.swift in Sources */,
+				7E42031D1CE3C85A00B3DE8F /* ContactController.swift in Sources */,
+				7E4203011CE3B6F300B3DE8F /* DescriptionController.swift in Sources */,
+				F2C2E5301CE3270000F93776 /* AppDelegate.swift in Sources */,
+				7E42031B1CE3C5C600B3DE8F /* SummaryController.swift in Sources */,
+				7E4202FF1CE3B63B00B3DE8F /* PlatformController.swift in Sources */,
+				7E4203131CE3C52800B3DE8F /* PartProductionController.swift in Sources */,
+				7E4203191CE3C5A600B3DE8F /* RunningTimeController.swift in Sources */,
+				7E4203151CE3C55E00B3DE8F /* DeadlineController.swift in Sources */,
+				7E4202FB1CE3B18500B3DE8F /* VideoTypeController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2C2E53C1CE3270000F93776 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2C2E5451CE3270000F93776 /* Scope_Mode_ipadTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2C2E5471CE3270000F93776 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2C2E5501CE3270000F93776 /* Scope_Mode_ipadUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F2C2E5421CE3270000F93776 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2C2E52B1CE3270000F93776 /* Scope Mode ipad */;
+			targetProxy = F2C2E5411CE3270000F93776 /* PBXContainerItemProxy */;
+		};
+		F2C2E54D1CE3270000F93776 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2C2E52B1CE3270000F93776 /* Scope Mode ipad */;
+			targetProxy = F2C2E54C1CE3270000F93776 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F2C2E5331CE3270000F93776 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2C2E5341CE3270000F93776 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F2C2E5381CE3270000F93776 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2C2E5391CE3270000F93776 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F2C2E5521CE3270000F93776 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F2C2E5531CE3270000F93776 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F2C2E5551CE3270000F93776 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Scope Mode ipad/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.scopemodeipad.Scope-Mode-ipad";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		F2C2E5561CE3270000F93776 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Scope Mode ipad/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.scopemodeipad.Scope-Mode-ipad";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		F2C2E5581CE3270000F93776 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Scope Mode ipadTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.scopemodeipad.Scope-Mode-ipadTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Scope Mode ipad.app/Scope Mode ipad";
+			};
+			name = Debug;
+		};
+		F2C2E5591CE3270000F93776 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Scope Mode ipadTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.scopemodeipad.Scope-Mode-ipadTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Scope Mode ipad.app/Scope Mode ipad";
+			};
+			name = Release;
+		};
+		F2C2E55B1CE3270000F93776 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Scope Mode ipadUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.scopemodeipad.Scope-Mode-ipadUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Scope Mode ipad";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		F2C2E55C1CE3270000F93776 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Scope Mode ipadUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.scopemodeipad.Scope-Mode-ipadUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Scope Mode ipad";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F2C2E5271CE3270000F93776 /* Build configuration list for PBXProject "Scope Mode ipad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2C2E5521CE3270000F93776 /* Debug */,
+				F2C2E5531CE3270000F93776 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2C2E5541CE3270000F93776 /* Build configuration list for PBXNativeTarget "Scope Mode ipad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2C2E5551CE3270000F93776 /* Debug */,
+				F2C2E5561CE3270000F93776 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2C2E5571CE3270000F93776 /* Build configuration list for PBXNativeTarget "Scope Mode ipadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2C2E5581CE3270000F93776 /* Debug */,
+				F2C2E5591CE3270000F93776 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2C2E55A1CE3270000F93776 /* Build configuration list for PBXNativeTarget "Scope Mode ipadUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2C2E55B1CE3270000F93776 /* Debug */,
+				F2C2E55C1CE3270000F93776 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F2C2E5241CE3270000F93776 /* Project object */;
+}
