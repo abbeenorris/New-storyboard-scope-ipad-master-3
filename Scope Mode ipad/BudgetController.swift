@@ -10,6 +10,7 @@ class BudgetController: UIViewController {
     var platformVar = String()
     var budgetVar = String()
     var descriptionVar = String()
+    var partVar = String()
     
     @IBOutlet weak var budgetSlider: UISlider!
     @IBOutlet weak var budgetLabel: UILabel!

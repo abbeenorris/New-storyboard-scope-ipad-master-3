@@ -8,11 +8,56 @@ class PartProductionController: UIViewController {
     var timeVar = String()
     var deadlineVar = String()
     var descriptionVar = String()
+    var partVar = String()
+    
+    
+    
+    
+    @IBOutlet weak var liveSoundSwitch: UISwitch!
+    @IBOutlet weak var musicSwitch: UISwitch!
+    @IBOutlet weak var voiceoverSwitch: UISwitch!
+    
+    
+    
+    
+    
+    
+    @IBAction func liveSoundSwitchPressed(sender: AnyObject) {
+        if liveSoundSwitch.on{
+            partVar = "Live Sound"
+        }
+    }
+    
+    @IBAction func musicSwitchPressed(sender: AnyObject) {
+        if musicSwitch.on{
+            partVar = "Music"
+        }
+    }
+    
+    @IBAction func voiceoverSwitchPressed(sender: AnyObject) {
+        if voiceoverSwitch.on{
+            partVar = "Testimonial"
+        }
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
            
     }
+    
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let DestViewController : StyleController = segue.destinationViewController as! StyleController
@@ -32,5 +77,8 @@ class PartProductionController: UIViewController {
         
         let videoDescription : StyleController = segue.destinationViewController as! StyleController
         videoDescription.descriptionVar = descriptionVar
+        
+        let partProduction : StyleController = segue.destinationViewController as! StyleController
+        partProduction.partVar = partVar
     }
 }

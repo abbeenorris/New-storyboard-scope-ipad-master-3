@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q52-TK-pRn">
-                                <rect key="frame" x="0.0" y="164" width="1024" height="44"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q52-TK-pRn">
+                                <rect key="frame" x="0.0" y="64" width="1024" height="44"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Scope Mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ybd-7c-OAe">
                                         <rect key="frame" x="8" y="11" width="97" height="21"/>
@@ -31,7 +31,7 @@
                                 <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k7y-A5-U5V">
-                                <rect key="frame" x="179" y="334" width="666" height="30"/>
+                                <rect key="frame" x="179" y="234" width="666" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="666" id="cR9-zo-gMb"/>
                                 </constraints>
@@ -39,12 +39,12 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O2v-ff-Rsm">
-                                <rect key="frame" x="179" y="547" width="666" height="30"/>
+                                <rect key="frame" x="179" y="447" width="666" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="RMH-FM-mXA">
-                                <rect key="frame" x="437" y="751" width="150" height="2"/>
+                                <rect key="frame" x="437" y="651" width="150" height="2"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="uyZ-h6-QpP"/>
                                 </constraints>
@@ -52,7 +52,7 @@
                                 <color key="trackTintColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your client name?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJF-ES-wRQ">
-                                <rect key="frame" x="328" y="445" width="368" height="37"/>
+                                <rect key="frame" x="328" y="345" width="368" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="RNO-og-uN3"/>
                                 </constraints>
@@ -61,7 +61,7 @@
                                 <color key="highlightedColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your project name?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ggu-R2-akc">
-                                <rect key="frame" x="328" y="256" width="368" height="37"/>
+                                <rect key="frame" x="328" y="156" width="368" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="lp2-PB-tva"/>
                                 </constraints>
@@ -70,7 +70,7 @@
                                 <color key="highlightedColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HYC-ch-6R8">
-                                <rect key="frame" x="920" y="632" width="30" height="30"/>
+                                <rect key="frame" x="920" y="532" width="30" height="30"/>
                                 <state key="normal" title="next"/>
                                 <connections>
                                     <segue destination="kZZ-4M-26h" kind="show" id="JRD-69-BbQ"/>
@@ -81,20 +81,21 @@
                         <constraints>
                             <constraint firstItem="Ggu-R2-akc" firstAttribute="trailing" secondItem="lJF-ES-wRQ" secondAttribute="trailing" id="020-yE-rFP"/>
                             <constraint firstItem="Ggu-R2-akc" firstAttribute="top" secondItem="q52-TK-pRn" secondAttribute="bottom" constant="48" id="4hK-zO-tdW"/>
-                            <constraint firstItem="3Uz-18-4Hx" firstAttribute="top" secondItem="HYC-ch-6R8" secondAttribute="bottom" constant="62" id="5pl-1g-xi7"/>
+                            <constraint firstItem="3Uz-18-4Hx" firstAttribute="top" secondItem="HYC-ch-6R8" secondAttribute="bottom" constant="162" id="5pl-1g-xi7"/>
                             <constraint firstItem="Ggu-R2-akc" firstAttribute="centerX" secondItem="k7y-A5-U5V" secondAttribute="centerX" id="Fcu-6b-Tr0"/>
                             <constraint firstItem="Ggu-R2-akc" firstAttribute="leading" secondItem="lJF-ES-wRQ" secondAttribute="leading" id="LgH-5c-HG3"/>
                             <constraint firstItem="O2v-ff-Rsm" firstAttribute="centerX" secondItem="RMH-FM-mXA" secondAttribute="centerX" id="Oao-bi-iRt"/>
-                            <constraint firstItem="3Uz-18-4Hx" firstAttribute="top" secondItem="O2v-ff-Rsm" secondAttribute="bottom" constant="147" id="QSN-Sd-Xfl"/>
+                            <constraint firstItem="3Uz-18-4Hx" firstAttribute="top" secondItem="O2v-ff-Rsm" secondAttribute="bottom" constant="247" id="QSN-Sd-Xfl"/>
                             <constraint firstItem="k7y-A5-U5V" firstAttribute="top" secondItem="Ggu-R2-akc" secondAttribute="bottom" constant="41" id="Zax-v1-nOd"/>
                             <constraint firstAttribute="trailingMargin" secondItem="HYC-ch-6R8" secondAttribute="trailing" constant="54" id="a8L-iM-qZJ"/>
                             <constraint firstItem="q52-TK-pRn" firstAttribute="centerX" secondItem="Ggu-R2-akc" secondAttribute="centerX" id="ale-Pn-tdP"/>
                             <constraint firstItem="q52-TK-pRn" firstAttribute="leading" secondItem="qbq-ej-2CF" secondAttribute="leading" id="aqb-uN-9YB"/>
+                            <constraint firstItem="q52-TK-pRn" firstAttribute="top" secondItem="x2v-bF-kDl" secondAttribute="bottom" id="bov-SI-v4S"/>
                             <constraint firstItem="O2v-ff-Rsm" firstAttribute="top" secondItem="lJF-ES-wRQ" secondAttribute="bottom" constant="65" id="ctm-CA-W9j"/>
                             <constraint firstItem="k7y-A5-U5V" firstAttribute="leading" secondItem="O2v-ff-Rsm" secondAttribute="leading" id="hyF-Dz-QfI"/>
                             <constraint firstAttribute="trailing" secondItem="q52-TK-pRn" secondAttribute="trailing" id="jrb-UZ-dD4"/>
                             <constraint firstItem="lJF-ES-wRQ" firstAttribute="top" secondItem="k7y-A5-U5V" secondAttribute="bottom" constant="81" id="mFT-Rj-Lr6"/>
-                            <constraint firstItem="RMH-FM-mXA" firstAttribute="top" secondItem="3Uz-18-4Hx" secondAttribute="bottom" constant="27" id="pP3-z7-Chi"/>
+                            <constraint firstItem="RMH-FM-mXA" firstAttribute="top" secondItem="3Uz-18-4Hx" secondAttribute="bottom" constant="-73" id="pP3-z7-Chi"/>
                             <constraint firstItem="k7y-A5-U5V" firstAttribute="trailing" secondItem="O2v-ff-Rsm" secondAttribute="trailing" id="tFR-qZ-Olb"/>
                         </constraints>
                     </view>
@@ -773,14 +774,23 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="CMH-Mx-w1G">
                                 <rect key="frame" x="583" y="370" width="51" height="31"/>
                                 <color key="onTintColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="liveSoundSwitchPressed:" destination="zHa-sf-bCy" eventType="valueChanged" id="I7y-oR-82w"/>
+                                </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bGR-Vv-xNd">
                                 <rect key="frame" x="583" y="426" width="51" height="31"/>
                                 <color key="onTintColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="musicSwitchPressed:" destination="zHa-sf-bCy" eventType="valueChanged" id="BKW-fp-vBO"/>
+                                </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="JKh-Jq-wrU">
                                 <rect key="frame" x="583" y="487" width="51" height="31"/>
                                 <color key="onTintColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="voiceoverSwitchPressed:" destination="zHa-sf-bCy" eventType="valueChanged" id="zIZ-3Q-cvk"/>
+                                </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dFa-zd-W9x">
                                 <rect key="frame" x="583" y="544" width="51" height="31"/>
@@ -851,6 +861,11 @@
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="liveSoundSwitch" destination="CMH-Mx-w1G" id="aRd-Cq-0TZ"/>
+                        <outlet property="musicSwitch" destination="bGR-Vv-xNd" id="nHx-fF-6Ku"/>
+                        <outlet property="voiceoverSwitch" destination="JKh-Jq-wrU" id="5LW-f2-Zdc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Flh-su-X2g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

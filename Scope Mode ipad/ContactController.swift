@@ -12,6 +12,7 @@ class ContactController: UIViewController, MFMailComposeViewControllerDelegate {
     var budgetVar = String()
     var platformVar = String()
     var projectTitle = String()
+    var partVar = String()
     
     
     
@@ -80,6 +81,9 @@ class ContactController: UIViewController, MFMailComposeViewControllerDelegate {
         
         let videoDescription : SummaryController = segue.destinationViewController as! SummaryController
         videoDescription.descriptionVar = descriptionVar
+        
+        let partProduction : SummaryController = segue.destinationViewController as! SummaryController
+        partProduction.partVar = partVar
     }
     
 }
