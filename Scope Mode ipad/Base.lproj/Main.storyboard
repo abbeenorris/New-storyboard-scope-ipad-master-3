@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="qg8-9U-czk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="qg8-9U-czk">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
@@ -1444,7 +1444,7 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Give us a brief description of your project" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTE-R0-NtU">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Give us a brief description of your project" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTE-R0-NtU">
                                 <rect key="frame" x="235" y="259" width="554" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="kbw-4Y-O4j"/>
@@ -1453,7 +1453,7 @@
                                 <color key="textColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Enter text here..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zfX-41-yrE">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Enter text here..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zfX-41-yrE">
                                 <rect key="frame" x="132" y="350" width="760" height="200"/>
                                 <color key="backgroundColor" red="0.90869633838383834" green="0.90869633838383834" blue="0.90869633838383834" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -1472,14 +1472,8 @@
                                 <color key="progressTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="trackTintColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tS0-mB-EIS">
-                                <rect key="frame" x="851" y="558" width="37" height="30"/>
-                                <state key="normal" title="Done">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PZ1-Fj-GKW">
-                                <rect key="frame" x="918" y="639" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PZ1-Fj-GKW">
+                                <rect key="frame" x="862" y="558" width="30" height="30"/>
                                 <state key="normal" title="next"/>
                                 <connections>
                                     <segue destination="zHa-sf-bCy" kind="show" id="Yhr-3F-G8L"/>
@@ -1495,12 +1489,9 @@
                             <constraint firstItem="Diy-C4-Kgc" firstAttribute="centerX" secondItem="qTE-R0-NtU" secondAttribute="centerX" id="UkT-wX-gCA"/>
                             <constraint firstItem="zfX-41-yrE" firstAttribute="centerX" secondItem="KFQ-zp-QyP" secondAttribute="centerX" id="YHD-lX-Ys8"/>
                             <constraint firstItem="Diy-C4-Kgc" firstAttribute="leading" secondItem="sJm-sc-TKI" secondAttribute="leading" id="cy2-xp-nu1"/>
-                            <constraint firstItem="tS0-mB-EIS" firstAttribute="top" secondItem="zfX-41-yrE" secondAttribute="bottom" constant="8" symbolic="YES" id="gZA-ge-GdM"/>
                             <constraint firstItem="zfX-41-yrE" firstAttribute="top" secondItem="qTE-R0-NtU" secondAttribute="bottom" constant="54" id="ooN-N0-IHL"/>
                             <constraint firstAttribute="trailing" secondItem="Diy-C4-Kgc" secondAttribute="trailing" id="sdE-RG-hIa"/>
                             <constraint firstItem="TqA-56-wPJ" firstAttribute="top" secondItem="PZ1-Fj-GKW" secondAttribute="bottom" constant="55" id="w2W-tT-vD8"/>
-                            <constraint firstAttribute="trailing" secondItem="tS0-mB-EIS" secondAttribute="trailing" constant="136" id="wAs-tE-zxl"/>
-                            <constraint firstItem="TqA-56-wPJ" firstAttribute="top" secondItem="tS0-mB-EIS" secondAttribute="bottom" constant="136" id="xrH-T9-aSt"/>
                         </constraints>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>

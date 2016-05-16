@@ -7,13 +7,19 @@ class DescriptionController: UIViewController {
     var videoTypeVar = String()
     var timeVar = String()
     var deadlineVar = String()
+    var descriptionVar = String()
     @IBOutlet weak var descriptionText: UITextView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+       descriptionVar = descriptionText.text!
+        
     }
    
+    
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let projectTitle : PartProductionController = segue.destinationViewController as! PartProductionController
         projectTitle.projectTitleVar = projectTitleVar
