@@ -22,15 +22,15 @@ class SummaryController: UIViewController, MFMailComposeViewControllerDelegate {
     @IBOutlet weak var projectText: UITextField!
     @IBOutlet weak var clientText: UITextField!
     @IBOutlet weak var videoTypeText: UITextField!
-    @IBOutlet weak var budgetText: UITextField!
-    @IBOutlet weak var platformText: UITextField!
+    @IBOutlet weak var runningTimeText: UITextField!
+    @IBOutlet weak var deadlineText: UITextField!
     @IBOutlet weak var descriptionText: UITextField!
+    @IBOutlet weak var partProductionText: UITextField!
     @IBOutlet weak var styleText: UITextField!
     @IBOutlet weak var charactersText: UITextField!
     @IBOutlet weak var settingText: UITextField!
-    @IBOutlet weak var partProductionText: UITextField!
-    @IBOutlet weak var deadlineText: UITextField!
-    @IBOutlet weak var runningTimeText: UITextField!
+    @IBOutlet weak var platformText: UITextField!
+    @IBOutlet weak var budgetText: UITextField!
     @IBOutlet weak var companyNameText: UITextField!
     @IBOutlet weak var emailText: UITextField!
     @IBOutlet weak var phoneNumberText: UITextField!

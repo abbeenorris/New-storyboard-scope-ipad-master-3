@@ -76,7 +76,7 @@ class ContactController: UIViewController {
         company.companyVar =  companyVar
         
         let email : SummaryController = segue.destinationViewController as! SummaryController
-        company.emailVar =  emailVar
+        email.emailVar =  emailVar
         
         let phone : SummaryController = segue.destinationViewController as! SummaryController
         phone.phoneNumberVar =  phoneNumberVar

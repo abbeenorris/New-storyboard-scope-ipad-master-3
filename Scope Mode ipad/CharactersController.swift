@@ -12,11 +12,12 @@ class CharactersController: UIViewController {
     var styleVar = String()
     var characterVar = String()
     var settingVar = String()
+    let step: Float = 1
     // characater
     @IBOutlet weak var characterSlider: UISlider!
     @IBOutlet weak var characterText: UILabel!
     @IBAction func characterSliderChanged(sender: AnyObject) {
-        let currentlVaule = characterSlider.value
+        let currentlVaule = round(characterSlider.value / step) * step
         characterText.text! = "\(currentlVaule)"
         characterVar = characterText.text!
     }
