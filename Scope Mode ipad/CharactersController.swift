@@ -28,9 +28,7 @@ class CharactersController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        settingVar = settingText.text!
-           
+                   
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -62,7 +60,7 @@ class CharactersController: UIViewController {
         character.characterVar =  characterVar
         
         let setting : PlatformController = segue.destinationViewController as! PlatformController
-        setting.settingVar =  settingVar
+        setting.settingVar =  settingText.text!
     }
     
 }

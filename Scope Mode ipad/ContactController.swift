@@ -73,13 +73,13 @@ class ContactController: UIViewController {
         setting.settingVar =  settingVar
         
         let company : SummaryController = segue.destinationViewController as! SummaryController
-        company.companyVar =  companyVar
+        company.companyVar =  companyName.text!
         
-        let email : SummaryController = segue.destinationViewController as! SummaryController
-        email.emailVar =  emailVar
+        let emailSeg : SummaryController = segue.destinationViewController as! SummaryController
+        emailSeg.emailVar = email.text!
         
         let phone : SummaryController = segue.destinationViewController as! SummaryController
-        phone.phoneNumberVar =  phoneNumberVar
+        phone.phoneNumberVar =  phoneNumber.text!
 
 
         
