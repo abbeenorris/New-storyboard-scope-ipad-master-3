@@ -38,6 +38,9 @@ class BudgetController: UIViewController {
         let runningTime : ContactController = segue.destinationViewController as! ContactController
         runningTime.timeVar = timeVar
         
+        let deadline : ContactController = segue.destinationViewController as! ContactController
+        deadline.deadlineVar = deadlineVar
+        
         let budget : ContactController = segue.destinationViewController as! ContactController
         budget.budgetVar = budgetVar
         

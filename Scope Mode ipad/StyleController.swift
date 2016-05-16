@@ -32,6 +32,9 @@ class StyleController: UIViewController {
             
             let runningTime : CharactersController = segue.destinationViewController as! CharactersController
             runningTime.timeVar = timeVar
+            
+            let deadline : CharactersController = segue.destinationViewController as! CharactersController
+            deadline.deadlineVar = deadlineVar
         }
         
         if segue.identifier == "Animation" {

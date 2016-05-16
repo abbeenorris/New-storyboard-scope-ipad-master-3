@@ -36,6 +36,7 @@ class SummaryController: UIViewController {
         platformText.text! = platformVar
         budgetText.text! = budgetVar
         runningTimeText.text! = timeVar
+        deadlineText.text! = deadlineVar
         
         
     }

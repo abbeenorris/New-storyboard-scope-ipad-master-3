@@ -73,6 +73,9 @@ class ContactController: UIViewController, MFMailComposeViewControllerDelegate {
         
         let runningTime : SummaryController = segue.destinationViewController as! SummaryController
         runningTime.timeVar = timeVar
+        
+        let deadline : SummaryController = segue.destinationViewController as! SummaryController
+        deadline.deadlineVar = deadlineVar
     }
     
 }

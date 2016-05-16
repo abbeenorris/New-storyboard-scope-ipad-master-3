@@ -26,5 +26,7 @@ class PartProductionController: UIViewController {
         let runningTime : StyleController = segue.destinationViewController as! StyleController
         runningTime.timeVar = timeVar
         
+        let deadline : StyleController = segue.destinationViewController as! StyleController
+        deadline.deadlineVar = deadlineVar
     }
 }

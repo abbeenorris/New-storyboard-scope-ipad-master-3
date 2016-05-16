@@ -11,7 +11,7 @@ class DescriptionController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-           print(deadlineVar)
+        
     }
    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -26,6 +26,9 @@ class DescriptionController: UIViewController {
         
         let runningTime : PartProductionController = segue.destinationViewController as! PartProductionController
         runningTime.timeVar = timeVar
+        
+        let deadline : PartProductionController = segue.destinationViewController as! PartProductionController
+        deadline.deadlineVar = deadlineVar
         
     }
 }

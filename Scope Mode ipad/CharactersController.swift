@@ -25,6 +25,9 @@ class CharactersController: UIViewController {
         
         let runningTime : PlatformController = segue.destinationViewController as! PlatformController
         runningTime.timeVar = timeVar
+        
+        let deadline : PlatformController = segue.destinationViewController as! PlatformController
+        deadline.deadlineVar = deadlineVar
     }
     
 }

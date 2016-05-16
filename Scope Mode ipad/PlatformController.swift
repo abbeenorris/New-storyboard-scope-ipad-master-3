@@ -86,6 +86,9 @@ class PlatformController: UIViewController {
         let runningTime : BudgetController = segue.destinationViewController as! BudgetController
         runningTime.timeVar = timeVar
         
+        let deadline : BudgetController = segue.destinationViewController as! BudgetController
+        deadline.deadlineVar = deadlineVar
+        
         let platform : BudgetController = segue.destinationViewController as! BudgetController
         platform.platformVar = platformVar
         
