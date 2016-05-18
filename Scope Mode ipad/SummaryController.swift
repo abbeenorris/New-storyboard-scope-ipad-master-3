@@ -55,10 +55,14 @@ class SummaryController: UIViewController, MFMailComposeViewControllerDelegate {
         emailText.text! = emailVar
         phoneNumberText.text! = phoneNumberVar
         
-        
+        let emailMessage = "Client details are as follows \n Client Name: \([clientNameVar])"
         
         
     }
+    
+
+    
+
     
     //start email (email form wont work in simulator, you'll need a device to test  )
     @IBAction func sendEmailButtonTapped(sender: AnyObject) {
@@ -69,6 +73,8 @@ class SummaryController: UIViewController, MFMailComposeViewControllerDelegate {
             self.showSendMailErrorAlert()
         }
     }
+    
+ 
     
     
     func configuredMailComposeViewController() -> MFMailComposeViewController {
