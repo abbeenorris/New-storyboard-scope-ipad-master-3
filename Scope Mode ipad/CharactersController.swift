@@ -35,27 +35,27 @@ class CharactersController: UIViewController {
                    
     }
     
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
-    }
-    
-    func keyboardWillShow(notification:NSNotification){
-        
-        var userInfo = notification.userInfo!
-        var keyboardFrame:CGRect = (userInfo[UIKeyboardFrameBeginUserInfoKey] as! NSValue).CGRectValue()
-        keyboardFrame = self.view.convertRect(keyboardFrame, fromView: nil)
-        
-        var contentInset:UIEdgeInsets = self.scrollView.contentInset
-        contentInset.bottom = keyboardFrame.size.height
-        self.scrollView.contentInset = contentInset
-    }
-    
-    func keyboardWillHide(notification:NSNotification){
-        
-        var contentInset:UIEdgeInsets = UIEdgeInsetsZero
-        self.scrollView.contentInset = contentInset
-    }
+//    func textFieldShouldReturn(textField: UITextField) -> Bool {
+//        textField.resignFirstResponder()
+//        return true
+//    }
+//    
+//    func keyboardWillShow(notification:NSNotification){
+//        
+//        var userInfo = notification.userInfo!
+//        var keyboardFrame:CGRect = (userInfo[UIKeyboardFrameBeginUserInfoKey] as! NSValue).CGRectValue()
+//        keyboardFrame = self.view.convertRect(keyboardFrame, fromView: nil)
+//        
+//        var contentInset:UIEdgeInsets = self.scrollView.contentInset
+//        contentInset.bottom = keyboardFrame.size.height
+//        self.scrollView.contentInset = contentInset
+//    }
+//    
+//    func keyboardWillHide(notification:NSNotification){
+//        
+//        var contentInset:UIEdgeInsets = UIEdgeInsetsZero
+//        self.scrollView.contentInset = contentInset
+//    }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         self.view.endEditing(true)
