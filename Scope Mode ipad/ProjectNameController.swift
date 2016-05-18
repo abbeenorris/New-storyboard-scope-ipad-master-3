@@ -51,6 +51,7 @@ class ProjectNameController: UIViewController {
         let clientName : VideoTypeController = segue.destinationViewController as! VideoTypeController
         clientName.clientNameVar = clientNameTextField.text!
         
+        
     }
     
     
