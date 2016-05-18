@@ -225,7 +225,7 @@
 				TargetAttributes = {
 					F2C2E52B1CE3270000F93776 = {
 						CreatedOnToolsVersion = 7.0.1;
-						DevelopmentTeam = E4Y6DA7TD6;
+						DevelopmentTeam = 9LMQ27N2DZ;
 					};
 					F2C2E53F1CE3270000F93776 = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -446,8 +446,9 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Scope Mode ipad/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.scopemodeipad.Scope-Mode-ipad";
+				PRODUCT_BUNDLE_IDENTIFIER = com.scopemodeipad.ScopeModeipad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 2;
@@ -461,8 +462,9 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Scope Mode ipad/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.scopemodeipad.Scope-Mode-ipad";
+				PRODUCT_BUNDLE_IDENTIFIER = com.scopemodeipad.ScopeModeipad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 2;

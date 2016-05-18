@@ -55,12 +55,12 @@ class SummaryController: UIViewController, MFMailComposeViewControllerDelegate {
         emailText.text! = emailVar
         phoneNumberText.text! = phoneNumberVar
         
-        let emailMessage = "Client details are as follows \n Client Name: \([clientNameVar])"
+        
         
         
     }
     
-
+//let emailMessage = "Client details are as follows \n Client Name: \([clientNameVar])"
     
 
     
@@ -84,7 +84,7 @@ class SummaryController: UIViewController, MFMailComposeViewControllerDelegate {
         //touch only things in this block
         mailComposerVC.setToRecipients(["sam.gray22@gmail.com"])
         mailComposerVC.setSubject( "company name")
-        mailComposerVC.setMessageBody("", isHTML: false)
+        mailComposerVC.setMessageBody("Client details are as follows \n Client Name: \([clientNameVar]) \n Project Name: \([projectTitleVar]) \n Video Type: \([videoTypeVar]) \n Running Time: \([timeVar]) \n Deadline: \([deadlineVar]) \n Description: \([descriptionVar]) \n Part Production: \([partVar]) \n Style: \([styleVar]) \n Number of Characters: \([characterVar]) \n Setting: \([settingVar]) \n Platform: \([platformVar]) \n Budget: \([budgetVar]) \n Company Name: \([companyVar]) \n Email: \([emailVar]) \n Phone Number: \([phoneNumberVar]) \n", isHTML: false)
         //end block
         return mailComposerVC
     }
