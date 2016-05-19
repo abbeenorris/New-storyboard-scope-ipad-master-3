@@ -59,7 +59,8 @@ class SummaryController: UIViewController, MFMailComposeViewControllerDelegate {
         companyNameText.text! = companyVar
         emailText.text! = emailVar
         phoneNumberText.text! = phoneNumberVar
-                
+        
+       
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillShow:"), name: UIKeyboardWillShowNotification, object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillHide:"), name: UIKeyboardWillHideNotification, object: nil)
@@ -68,7 +69,7 @@ class SummaryController: UIViewController, MFMailComposeViewControllerDelegate {
     }
     
     @IBAction func projectEdit(sender: AnyObject) {
-        let projectTitleVar = projectText.text
+        let projectTitleVar = projectText.text!
         
         print(projectTitleVar)
     }
@@ -97,6 +98,22 @@ class SummaryController: UIViewController, MFMailComposeViewControllerDelegate {
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         self.view.endEditing(true)
+        
+        projectTitleVar = projectText.text!
+        clientNameVar = clientText.text!
+        videoTypeVar =  videoTypeText.text!
+        timeVar = runningTimeText.text!
+        deadlineVar = deadlineText.text!
+        descriptionVar = descriptionText.text!
+        partVar = partProductionText.text!
+        styleVar = styleText.text!
+        characterVar = charactersText.text!
+        settingVar = settingText.text!
+        platformVar = platformText.text!
+        budgetVar = budgetText.text!
+        companyVar = companyNameText.text!
+        emailVar = emailText.text!
+        phoneNumberVar = phoneNumberText.text!
     }
 
     
