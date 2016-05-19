@@ -34,6 +34,7 @@ class SummaryController: UIViewController, MFMailComposeViewControllerDelegate {
     @IBOutlet weak var companyNameText: UITextField!
     @IBOutlet weak var emailText: UITextField!
     @IBOutlet weak var phoneNumberText: UITextField!
+    @IBOutlet weak var scrollView: UIScrollView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,12 +56,39 @@ class SummaryController: UIViewController, MFMailComposeViewControllerDelegate {
         emailText.text! = emailVar
         phoneNumberText.text! = phoneNumberVar
         
-        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillShow:"), name: UIKeyboardWillShowNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillHide:"), name: UIKeyboardWillHideNotification, object: nil)
         
         
     }
     
-//let emailMessage = "Client details are as follows \n Client Name: \([clientNameVar])"
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    func keyboardWillShow(notification:NSNotification){
+        
+        var userInfo = notification.userInfo!
+        var keyboardFrame:CGRect = (userInfo[UIKeyboardFrameBeginUserInfoKey] as! NSValue).CGRectValue()
+        keyboardFrame = self.view.convertRect(keyboardFrame, fromView: nil)
+        
+        var contentInset:UIEdgeInsets = self.scrollView.contentInset
+        contentInset.bottom = keyboardFrame.size.height
+        self.scrollView.contentInset = contentInset
+    }
+    
+    func keyboardWillHide(notification:NSNotification){
+        
+        var contentInset:UIEdgeInsets = UIEdgeInsetsZero
+        self.scrollView.contentInset = contentInset
+    }
+    
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+
+    
     
 
     
