@@ -36,6 +36,14 @@ class SummaryController: UIViewController, MFMailComposeViewControllerDelegate {
     @IBOutlet weak var phoneNumberText: UITextField!
     @IBOutlet weak var scrollView: UIScrollView!
     
+
+    @IBAction func projectEdit(sender: AnyObject) {
+        let projectTitleVar = projectText.text
+        
+        print(projectTitleVar)
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
