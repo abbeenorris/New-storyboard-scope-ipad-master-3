@@ -33,7 +33,7 @@ class DescriptionController: UIViewController {
         keyboardFrame = self.view.convertRect(keyboardFrame, fromView: nil)
         
         var contentInset:UIEdgeInsets = self.scrollView.contentInset
-        contentInset.bottom = keyboardFrame.size.height
+        contentInset.bottom = keyboardFrame.size.height + 10
         self.scrollView.contentInset = contentInset
     }
     
