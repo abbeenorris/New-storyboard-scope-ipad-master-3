@@ -37,11 +37,7 @@ class SummaryController: UIViewController, MFMailComposeViewControllerDelegate {
     @IBOutlet weak var scrollView: UIScrollView!
     
 
-    @IBAction func projectEdit(sender: AnyObject) {
-        let projectTitleVar = projectText.text
-        
-        print(projectTitleVar)
-    }
+   
     
     
     override func viewDidLoad() {
@@ -69,6 +65,12 @@ class SummaryController: UIViewController, MFMailComposeViewControllerDelegate {
         NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillHide:"), name: UIKeyboardWillHideNotification, object: nil)
         
         
+    }
+    
+    @IBAction func projectEdit(sender: AnyObject) {
+        let projectTitleVar = projectText.text
+        
+        print(projectTitleVar)
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
