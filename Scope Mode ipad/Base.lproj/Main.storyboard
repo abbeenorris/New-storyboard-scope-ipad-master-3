@@ -1460,7 +1460,7 @@
                                 <color key="textColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.30000001192092896" translatesAutoresizingMaskIntoConstraints="NO" id="Sd2-6Y-BTX">
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" progress="0.30000001192092896" translatesAutoresizingMaskIntoConstraints="NO" id="Sd2-6Y-BTX">
                                 <rect key="frame" x="437" y="648" width="150" height="2"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="yA7-Fa-y7G"/>
@@ -1468,31 +1468,19 @@
                                 <color key="progressTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="trackTintColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
-                            <datePicker contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="15" translatesAutoresizingMaskIntoConstraints="NO" id="0mU-iH-1I5">
-                                <rect key="frame" x="43" y="318" width="938" height="198"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="198" id="BUA-7a-h1Q"/>
-                                </constraints>
-                                <date key="date" timeIntervalSinceReferenceDate="484778511.71709299">
-                                    <!--2016-05-12 20:41:51 +0000-->
-                                </date>
-                                <connections>
-                                    <action selector="runningTimePickerTime:" destination="OAy-rf-7K7" eventType="valueChanged" id="46B-yI-tLE"/>
-                                </connections>
-                            </datePicker>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vMj-i2-ife">
+                                <rect key="frame" x="0.0" y="316" width="1024" height="216"/>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="Sd2-6Y-BTX" secondAttribute="bottom" constant="118" id="27v-de-yul"/>
-                            <constraint firstItem="0mU-iH-1I5" firstAttribute="centerX" secondItem="Sd2-6Y-BTX" secondAttribute="centerX" id="5NN-cv-X20"/>
                             <constraint firstAttribute="trailing" secondItem="EXN-UF-Pas" secondAttribute="trailing" id="GbF-qd-ogR"/>
                             <constraint firstItem="EXN-UF-Pas" firstAttribute="top" secondItem="rzm-0z-ICM" secondAttribute="bottom" id="GtN-nk-MlM"/>
                             <constraint firstItem="EXN-UF-Pas" firstAttribute="centerX" secondItem="yj3-dO-3UI" secondAttribute="centerX" id="MCm-vQ-vm0"/>
                             <constraint firstItem="yj3-dO-3UI" firstAttribute="top" secondItem="EXN-UF-Pas" secondAttribute="bottom" constant="54" id="N9y-dy-MVi"/>
                             <constraint firstItem="EXN-UF-Pas" firstAttribute="leading" secondItem="lEe-Pi-vzJ" secondAttribute="leading" id="NwK-P0-wVN"/>
                             <constraint firstItem="yj3-dO-3UI" firstAttribute="top" secondItem="lEe-Pi-vzJ" secondAttribute="top" constant="162" id="QFd-53-qUP"/>
-                            <constraint firstItem="0mU-iH-1I5" firstAttribute="leading" secondItem="lEe-Pi-vzJ" secondAttribute="leadingMargin" constant="23" id="nPI-qN-KpO"/>
-                            <constraint firstItem="0mU-iH-1I5" firstAttribute="centerX" secondItem="yj3-dO-3UI" secondAttribute="centerX" id="tmo-cz-8mN"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="k51-8p-QpJ">
@@ -1505,7 +1493,7 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
-                        <outlet property="runningTimePicker" destination="0mU-iH-1I5" id="cGi-Ga-keA"/>
+                        <outlet property="TimerView" destination="vMj-i2-ife" id="2fn-1u-jrZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cYg-ZY-aaZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
