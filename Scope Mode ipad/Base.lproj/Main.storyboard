@@ -1056,6 +1056,7 @@
                         <outlet property="clientName" destination="cSL-Qw-6Xb" id="ueb-fc-VEF"/>
                         <outlet property="companyName" destination="gFO-DK-tzw" id="Km5-QH-33K"/>
                         <outlet property="email" destination="6fm-hc-8Ki" id="Qhh-eL-Zst"/>
+                        <outlet property="nextBtn" destination="xP4-Ik-Wir" id="i7c-g2-RFG"/>
                         <outlet property="phoneNumber" destination="uap-G9-rxR" id="3nO-Nf-5Jn"/>
                         <outlet property="scrollView" destination="NMy-h7-RgC" id="DJp-jJ-EvA"/>
                     </connections>
