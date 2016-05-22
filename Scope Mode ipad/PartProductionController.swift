@@ -25,18 +25,24 @@ class PartProductionController: UIViewController {
     @IBAction func liveSoundSwitchPressed(sender: AnyObject) {
         if liveSoundSwitch.on{
             partVar = "Live Sound"
+            musicSwitch.on = false
+            voiceoverSwitch.on = false
         }
     }
     
     @IBAction func musicSwitchPressed(sender: AnyObject) {
         if musicSwitch.on{
             partVar = "Music"
+            liveSoundSwitch.on = false
+            voiceoverSwitch.on = false
         }
     }
     
     @IBAction func voiceoverSwitchPressed(sender: AnyObject) {
         if voiceoverSwitch.on{
             partVar = "Testimonial"
+            musicSwitch.on = false
+            liveSoundSwitch.on = false
         }
     }
 

@@ -1,6 +1,7 @@
 import Foundation
 import UIKit
 
+
 class StyleController: UIViewController {
     var projectTitleVar =  String()
     var clientNameVar = String()
@@ -10,6 +11,8 @@ class StyleController: UIViewController {
     var descriptionVar = String()
     var partVar = String()
     var styleVar = String()
+    var settingVar = String()
+    
     
     
     
@@ -109,6 +112,9 @@ class StyleController: UIViewController {
             
             let style : CharactersController = segue.destinationViewController as! CharactersController
             style.styleVar = styleVar
+    
+            
+            
         }
         
         

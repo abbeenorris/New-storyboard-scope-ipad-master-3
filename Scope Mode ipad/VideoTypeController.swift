@@ -25,23 +25,38 @@ class VideoTypeController: UIViewController {
     @IBAction func promotionalSwitchPressed(sender: AnyObject) {
         if promotionalSwitch.on{
             videoTypeVar = "Promitional"
+            productSwitch.on = false
+            testimonialSwitch.on = false
+            virualSwitch.on = false
         }
     }
 
     @IBAction func productSwitchPressed(sender: AnyObject) {
         if productSwitch.on{
             videoTypeVar = "Product"
+            
+            promotionalSwitch.on = false
+            testimonialSwitch.on = false
+            virualSwitch.on = false
         }
     }
     
     @IBAction func testimonialSwitchPressed(sender: AnyObject) {
         if testimonialSwitch.on{
             videoTypeVar = "Testimonial"
+            
+            productSwitch.on = false
+            promotionalSwitch.on = false
+            virualSwitch.on = false
         }
     }
     @IBAction func viralSiwtch(sender: AnyObject) {
         if virualSwitch.on{
             videoTypeVar = "Viral"
+            
+            productSwitch.on = false
+            testimonialSwitch.on = false
+            promotionalSwitch.on = false
         }
     }
    

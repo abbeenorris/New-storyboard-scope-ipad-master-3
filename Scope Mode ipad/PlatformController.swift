@@ -26,6 +26,10 @@ class PlatformController: UIViewController {
         if tvSwitch.on {
         
             platformVar = "TV"
+            onlineSwitch.on = false
+            cinemaSwitch.on = false
+            eventSwitch.on = false
+            corporateSwitch.on = false
         
         }
     }
@@ -35,6 +39,10 @@ class PlatformController: UIViewController {
         if onlineSwitch.on {
             
             platformVar = "Online"
+            tvSwitch.on = false
+            cinemaSwitch.on = false
+            eventSwitch.on = false
+            corporateSwitch.on = false
             
         }
 
@@ -46,6 +54,11 @@ class PlatformController: UIViewController {
             
             platformVar = "Cinema"
             
+            tvSwitch.on = false
+            onlineSwitch.on = false
+            eventSwitch.on = false
+            corporateSwitch.on = false
+            
         }
 
     }
@@ -55,6 +68,10 @@ class PlatformController: UIViewController {
         if eventSwitch.on {
             
             platformVar = "Event"
+            tvSwitch.on = false
+            cinemaSwitch.on = false
+            onlineSwitch.on = false
+            corporateSwitch.on = false
             
         }
 
@@ -65,6 +82,10 @@ class PlatformController: UIViewController {
         if corporateSwitch.on {
             
             platformVar = "Corportate"
+            tvSwitch.on = false
+            cinemaSwitch.on = false
+            eventSwitch.on = false
+            onlineSwitch.on = false
             
         }
 
@@ -111,6 +132,7 @@ class PlatformController: UIViewController {
         
         let setting : BudgetController = segue.destinationViewController as! BudgetController
         setting.settingVar =  settingVar
+      
 
         
     }
