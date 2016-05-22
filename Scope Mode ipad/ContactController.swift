@@ -58,7 +58,7 @@ class ContactController: UIViewController {
     
     func keyboardWillHide(notification:NSNotification){
         
-        var contentInset:UIEdgeInsets = UIEdgeInsetsZero
+        let contentInset:UIEdgeInsets = UIEdgeInsetsZero
         self.scrollView.contentInset = contentInset
     }
     

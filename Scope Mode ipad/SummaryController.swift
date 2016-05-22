@@ -92,7 +92,7 @@ class SummaryController: UIViewController, MFMailComposeViewControllerDelegate {
     
     func keyboardWillHide(notification:NSNotification){
         
-        var contentInset:UIEdgeInsets = UIEdgeInsetsZero
+        let contentInset:UIEdgeInsets = UIEdgeInsetsZero
         self.scrollView.contentInset = contentInset
     }
     
@@ -150,7 +150,7 @@ class SummaryController: UIViewController, MFMailComposeViewControllerDelegate {
     }
     
     
-    func mailComposeController(controller: MFMailComposeViewController!, didFinishWithResult result: MFMailComposeResult, error: NSError!) {
+    func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {
         controller.dismissViewControllerAnimated(true, completion: nil)
         
     }
