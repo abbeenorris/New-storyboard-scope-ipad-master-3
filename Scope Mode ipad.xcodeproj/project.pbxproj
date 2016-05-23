@@ -19,6 +19,7 @@
 		7E4203191CE3C5A600B3DE8F /* RunningTimeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4203181CE3C5A600B3DE8F /* RunningTimeController.swift */; };
 		7E42031B1CE3C5C600B3DE8F /* SummaryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E42031A1CE3C5C600B3DE8F /* SummaryController.swift */; };
 		7E42031D1CE3C85A00B3DE8F /* ContactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E42031C1CE3C85A00B3DE8F /* ContactController.swift */; };
+		D1AF47361CF36CFC00CC0958 /* raleway in Resources */ = {isa = PBXBuildFile; fileRef = D1AF47351CF36CFC00CC0958 /* raleway */; };
 		D1E90F261CF348ED00CC3DA8 /* ThankyouController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E90F251CF348ED00CC3DA8 /* ThankyouController.swift */; };
 		F2C2E5301CE3270000F93776 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C2E52F1CE3270000F93776 /* AppDelegate.swift */; };
 		F2C2E5321CE3270000F93776 /* ProjectNameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C2E5311CE3270000F93776 /* ProjectNameController.swift */; };
@@ -60,6 +61,7 @@
 		7E42031A1CE3C5C600B3DE8F /* SummaryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryController.swift; sourceTree = "<group>"; };
 		7E42031C1CE3C85A00B3DE8F /* ContactController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactController.swift; sourceTree = "<group>"; };
 		85811B8E2AB97604314983AB /* Pods_Scope_Mode_ipad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Scope_Mode_ipad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1AF47351CF36CFC00CC0958 /* raleway */ = {isa = PBXFileReference; lastKnownFileType = folder; path = raleway; sourceTree = "<group>"; };
 		D1E90F251CF348ED00CC3DA8 /* ThankyouController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThankyouController.swift; sourceTree = "<group>"; };
 		E5CECC4F215E884ABF339C08 /* Pods-Scope Mode ipad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scope Mode ipad.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Scope Mode ipad/Pods-Scope Mode ipad.debug.xcconfig"; sourceTree = "<group>"; };
 		F2C2E52C1CE3270000F93776 /* Scope Mode ipad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Scope Mode ipad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -161,6 +163,7 @@
 				D1E90F251CF348ED00CC3DA8 /* ThankyouController.swift */,
 				F2C2E5331CE3270000F93776 /* Main.storyboard */,
 				F2C2E5381CE3270000F93776 /* LaunchScreen.storyboard */,
+				D1AF47351CF36CFC00CC0958 /* raleway */,
 				F2C2E5361CE3270000F93776 /* Assets.xcassets */,
 				F2C2E53B1CE3270000F93776 /* Info.plist */,
 			);
@@ -292,6 +295,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1AF47361CF36CFC00CC0958 /* raleway in Resources */,
 				F2C2E53A1CE3270000F93776 /* LaunchScreen.storyboard in Resources */,
 				F2C2E5371CE3270000F93776 /* Assets.xcassets in Resources */,
 				F2C2E5351CE3270000F93776 /* Main.storyboard in Resources */,
