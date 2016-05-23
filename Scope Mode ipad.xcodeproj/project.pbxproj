@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		317FB82775D884808154D1DB /* Pods_Scope_Mode_ipad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85811B8E2AB97604314983AB /* Pods_Scope_Mode_ipad.framework */; };
 		7E4202FB1CE3B18500B3DE8F /* VideoTypeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4202FA1CE3B18500B3DE8F /* VideoTypeController.swift */; };
 		7E4202FD1CE3B3C400B3DE8F /* BudgetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4202FC1CE3B3C400B3DE8F /* BudgetController.swift */; };
 		7E4202FF1CE3B63B00B3DE8F /* PlatformController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4202FE1CE3B63B00B3DE8F /* PlatformController.swift */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		590374917110D36EC48574A6 /* Pods-Scope Mode ipad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scope Mode ipad.release.xcconfig"; path = "Pods/Target Support Files/Pods-Scope Mode ipad/Pods-Scope Mode ipad.release.xcconfig"; sourceTree = "<group>"; };
 		7E4202FA1CE3B18500B3DE8F /* VideoTypeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoTypeController.swift; sourceTree = "<group>"; };
 		7E4202FC1CE3B3C400B3DE8F /* BudgetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudgetController.swift; sourceTree = "<group>"; };
 		7E4202FE1CE3B63B00B3DE8F /* PlatformController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatformController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,8 @@
 		7E4203181CE3C5A600B3DE8F /* RunningTimeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunningTimeController.swift; sourceTree = "<group>"; };
 		7E42031A1CE3C5C600B3DE8F /* SummaryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryController.swift; sourceTree = "<group>"; };
 		7E42031C1CE3C85A00B3DE8F /* ContactController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactController.swift; sourceTree = "<group>"; };
+		85811B8E2AB97604314983AB /* Pods_Scope_Mode_ipad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Scope_Mode_ipad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5CECC4F215E884ABF339C08 /* Pods-Scope Mode ipad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scope Mode ipad.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Scope Mode ipad/Pods-Scope Mode ipad.debug.xcconfig"; sourceTree = "<group>"; };
 		F2C2E52C1CE3270000F93776 /* Scope Mode ipad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Scope Mode ipad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2C2E52F1CE3270000F93776 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2C2E5311CE3270000F93776 /* ProjectNameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectNameController.swift; sourceTree = "<group>"; };
@@ -76,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				317FB82775D884808154D1DB /* Pods_Scope_Mode_ipad.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +101,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		415DE8D3CE677282767B1FC8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				85811B8E2AB97604314983AB /* Pods_Scope_Mode_ipad.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C16DEE86C0EADCA68421FA6D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E5CECC4F215E884ABF339C08 /* Pods-Scope Mode ipad.debug.xcconfig */,
+				590374917110D36EC48574A6 /* Pods-Scope Mode ipad.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F2C2E5231CE3270000F93776 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +125,8 @@
 				F2C2E5431CE3270000F93776 /* Scope Mode ipadTests */,
 				F2C2E54E1CE3270000F93776 /* Scope Mode ipadUITests */,
 				F2C2E52D1CE3270000F93776 /* Products */,
+				C16DEE86C0EADCA68421FA6D /* Pods */,
+				415DE8D3CE677282767B1FC8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -165,9 +189,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F2C2E5541CE3270000F93776 /* Build configuration list for PBXNativeTarget "Scope Mode ipad" */;
 			buildPhases = (
+				6DC11CD6AF4A814F77CF4B14 /* Check Pods Manifest.lock */,
 				F2C2E5281CE3270000F93776 /* Sources */,
 				F2C2E5291CE3270000F93776 /* Frameworks */,
 				F2C2E52A1CE3270000F93776 /* Resources */,
+				57E259E71204C3FB0AC0222E /* Embed Pods Frameworks */,
+				754FBCDBA9870174998E145B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -283,6 +310,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		57E259E71204C3FB0AC0222E /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Scope Mode ipad/Pods-Scope Mode ipad-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DC11CD6AF4A814F77CF4B14 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		754FBCDBA9870174998E145B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Scope Mode ipad/Pods-Scope Mode ipad-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F2C2E5281CE3270000F93776 /* Sources */ = {
@@ -441,6 +516,7 @@
 		};
 		F2C2E5551CE3270000F93776 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5CECC4F215E884ABF339C08 /* Pods-Scope Mode ipad.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -457,6 +533,7 @@
 		};
 		F2C2E5561CE3270000F93776 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 590374917110D36EC48574A6 /* Pods-Scope Mode ipad.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";

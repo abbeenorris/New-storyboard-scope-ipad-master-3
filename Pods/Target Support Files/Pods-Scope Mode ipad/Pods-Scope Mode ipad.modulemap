@@ -1,0 +1,6 @@
+framework module Pods_Scope_Mode_ipad {
+  umbrella header "Pods-Scope Mode ipad-umbrella.h"
+
+  export *
+  module * { export * }
+}
