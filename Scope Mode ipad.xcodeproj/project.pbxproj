@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		317FB82775D884808154D1DB /* Pods_Scope_Mode_ipad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85811B8E2AB97604314983AB /* Pods_Scope_Mode_ipad.framework */; };
+		39D84D941CF48185009509DB /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D84D931CF48185009509DB /* CustomButton.swift */; settings = {ASSET_TAGS = (); }; };
 		7E4202FB1CE3B18500B3DE8F /* VideoTypeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4202FA1CE3B18500B3DE8F /* VideoTypeController.swift */; };
 		7E4202FD1CE3B3C400B3DE8F /* BudgetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4202FC1CE3B3C400B3DE8F /* BudgetController.swift */; };
 		7E4202FF1CE3B63B00B3DE8F /* PlatformController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4202FE1CE3B63B00B3DE8F /* PlatformController.swift */; };
@@ -48,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		39D84D931CF48185009509DB /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		590374917110D36EC48574A6 /* Pods-Scope Mode ipad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scope Mode ipad.release.xcconfig"; path = "Pods/Target Support Files/Pods-Scope Mode ipad/Pods-Scope Mode ipad.release.xcconfig"; sourceTree = "<group>"; };
 		7E4202FA1CE3B18500B3DE8F /* VideoTypeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoTypeController.swift; sourceTree = "<group>"; };
 		7E4202FC1CE3B3C400B3DE8F /* BudgetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudgetController.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 				7E42031A1CE3C5C600B3DE8F /* SummaryController.swift */,
 				D1E90F251CF348ED00CC3DA8 /* ThankyouController.swift */,
 				F2C2E5331CE3270000F93776 /* Main.storyboard */,
+				39D84D931CF48185009509DB /* CustomButton.swift */,
 				F2C2E5381CE3270000F93776 /* LaunchScreen.storyboard */,
 				D1AF47351CF36CFC00CC0958 /* raleway */,
 				F2C2E5361CE3270000F93776 /* Assets.xcassets */,
@@ -385,6 +388,7 @@
 				7E4203191CE3C5A600B3DE8F /* RunningTimeController.swift in Sources */,
 				7E4203151CE3C55E00B3DE8F /* DeadlineController.swift in Sources */,
 				7E4202FB1CE3B18500B3DE8F /* VideoTypeController.swift in Sources */,
+				39D84D941CF48185009509DB /* CustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
