@@ -1,10 +1,12 @@
 import Foundation
 import UIKit
 
+var videoRunTime = Int()
+
 class RunningTimeController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
- 
     
-    var videoRunTime = 0
+    
+    
     
     
     @IBOutlet weak var TimerView: UIPickerView!
@@ -14,11 +16,13 @@ class RunningTimeController: UIViewController, UIPickerViewDelegate, UIPickerVie
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        timeVar = "Up to 5 minutes"
+        
         self.TimerView.delegate=self
         self.TimerView.dataSource=self
         
         timePicker = ["Up to 5 minutes", "5 minutes", "10 minutes ", "15 minutes", "20 minutes", "25 minutes", "30 minutes", "30 minutes +"]
-        
+        self.TimerView.selectRow(videoRunTime, inComponent: 0, animated: false)
     }
     
     
@@ -37,33 +41,12 @@ class RunningTimeController: UIViewController, UIPickerViewDelegate, UIPickerVie
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         videoRunTime = row
         timeVar = timePicker[row]
-    }
-
-    
-    
-    
-    
-    
-    
-    @IBOutlet weak var runningTimePicker: UIDatePicker!
-    let timeFormatter = NSDateFormatter()
-    @IBAction func runningTimePickerTime(sender: AnyObject) {
         
-        setTime()
-    
+        
+        
     }
     
     
-    
-  
-    
-    func setTime() {
-        timeFormatter.dateFormat = "HH:mm:ss"
-        timeVar = timeFormatter.stringFromDate(runningTimePicker.date)
-    }
-
-    
-
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         

@@ -1,11 +1,13 @@
 import Foundation
 import UIKit
 
-class DeadlineController: UIViewController {
+var currentSelection = deadlineVar
 
+class DeadlineController: UIViewController {
+    
     let dateFormatter = NSDateFormatter()
- 
-  
+    
+    
     
     @IBOutlet weak var deadlinePicker: UIDatePicker!
     
@@ -14,7 +16,29 @@ class DeadlineController: UIViewController {
         
         dateFormatter.dateStyle = NSDateFormatterStyle.ShortStyle
         
+        
+        
         deadlineVar = dateFormatter.stringFromDate(deadlinePicker.date)
+        
+    }
+    
+    
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let dateFormatter2 = NSDateFormatter()
+        dateFormatter2.dateFormat = "M-dd-yy"
+        
+        setDate()
+        
+        
+        
+        deadlinePicker.minimumDate = NSDate()
+        if deadlineVar != "" {
+            deadlinePicker.setDate(dateFormatter2.dateFromString(deadlineVar)!, animated: true)
+        }
+        
         
     }
     
@@ -29,30 +53,7 @@ class DeadlineController: UIViewController {
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
-    
-    
-    
-    
-    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-       
     }
 }
+

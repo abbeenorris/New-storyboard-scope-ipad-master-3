@@ -12,19 +12,26 @@ class ContactController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "textChanged:", name: UITextFieldTextDidChangeNotification, object: nil)
-        nextBtn.enabled = false
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillShow:"), name: UIKeyboardWillShowNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillHide:"), name: UIKeyboardWillHideNotification, object: nil)
+    
+    
+        nextBtn.enabled = true
         clientName.text! = clientNameVar
-        companyVar = companyName.text!
-        emailVar = email.text!
-        phoneNumberVar = phoneNumber.text!
-        postionVar = postion.text!
+       
         companyName.text! = companyVar
         email.text! = emailVar
         phoneNumber.text! = phoneNumberVar
         postion.text! = postionVar
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillShow:"), name: UIKeyboardWillShowNotification, object: nil)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillHide:"), name: UIKeyboardWillHideNotification, object: nil)
+        if companyVar == "" && emailVar == "" && postionVar == "" && phoneNumberVar == "" {
+            nextBtn.enabled = false
+            
+        }
+    
+    
+    
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
@@ -52,9 +59,8 @@ class ContactController: UIViewController {
         if companyName.hasText() && email.hasText() && postion.hasText() && phoneNumber.hasText() {
             nextBtn.enabled = true
         }
-        else {
-            nextBtn.enabled = false
-        }
+       
+       
     }
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         self.view.endEditing(true)
