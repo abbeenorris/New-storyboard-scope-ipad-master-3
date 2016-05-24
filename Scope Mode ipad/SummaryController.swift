@@ -18,6 +18,7 @@ class SummaryController: UIViewController, MFMailComposeViewControllerDelegate {
     @IBOutlet weak var platformText: UITextField!
     @IBOutlet weak var budgetText: UITextField!
     @IBOutlet weak var companyNameText: UITextField!
+    @IBOutlet weak var positionText: UITextField!
     @IBOutlet weak var emailText: UITextField!
     @IBOutlet weak var phoneNumberText: UITextField!
     @IBOutlet weak var scrollView: UIScrollView!
@@ -45,6 +46,7 @@ class SummaryController: UIViewController, MFMailComposeViewControllerDelegate {
         companyNameText.text! = companyVar
         emailText.text! = emailVar
         phoneNumberText.text! = phoneNumberVar
+        positionText.text! = postionVar
         
        
         
@@ -100,6 +102,7 @@ class SummaryController: UIViewController, MFMailComposeViewControllerDelegate {
         companyVar = companyNameText.text!
         emailVar = emailText.text!
         phoneNumberVar = phoneNumberText.text!
+        postionVar = positionText.text!
     }
 
     
@@ -126,7 +129,7 @@ class SummaryController: UIViewController, MFMailComposeViewControllerDelegate {
         //touch only things in this block
         mailComposerVC.setToRecipients(["katiemcgoo@hotmail.co.uk", "\(emailVar)"])
         mailComposerVC.setSubject( "Request from \(companyVar)")
-        mailComposerVC.setMessageBody("Client details are as follows \n Client Name: \(clientNameVar) \n Project Name: \(projectTitleVar) \n Video Type: \(videoTypeVar) \n Running Time: \(timeVar) \n Deadline: \(deadlineVar) \n Description: \(descriptionVar) \n Part Production: \(partVar) \n Style: \(styleVar) \n Number of Characters: \(characterVar) \n Setting: \(settingVar) \n Platform: \(platformVar) \n Budget: \(budgetVar) \n Company Name: \(companyVar) \n Email: \(emailVar) \n Phone Number: \(phoneNumberVar) \n", isHTML: false)
+        mailComposerVC.setMessageBody("Client details are as follows \n Client Name: \(clientNameVar) \n Project Name: \(projectTitleVar) \n Video Type: \(videoTypeVar) \n Running Time: \(timeVar) \n Deadline: \(deadlineVar) \n Description: \(descriptionVar) \n Part Production: \(partVar) \n Style: \(styleVar) \n Number of Characters: \(characterVar) \n Setting: \(settingVar) \n Platform: \(platformVar) \n Budget: \(budgetVar) \n Company Name: \(companyVar) \n Postion in Compnay: \(postionVar) \n Email: \(emailVar) \n Phone Number: \(phoneNumberVar) \n", isHTML: false)
         //end block
         return mailComposerVC
     }

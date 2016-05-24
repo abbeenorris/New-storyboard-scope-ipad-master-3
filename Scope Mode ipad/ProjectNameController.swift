@@ -15,6 +15,7 @@ var settingVar = String()
 var companyVar = String()
 var emailVar = String()
 var phoneNumberVar = String()
+var postionVar = String()
 
 class ProjectNameController: UIViewController {
     @IBOutlet weak var projectTextfield: UITextField!
@@ -25,6 +26,7 @@ class ProjectNameController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("help")
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "textChanged:", name: UITextFieldTextDidChangeNotification, object: nil)
         nextBtn.enabled = false

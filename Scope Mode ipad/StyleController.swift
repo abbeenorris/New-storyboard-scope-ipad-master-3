@@ -18,7 +18,7 @@ class StyleController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if liveActionVar == "Live Attion"{
+        if liveActionVar == "Live Action"{
             
             liveActionBtn.on = true
         

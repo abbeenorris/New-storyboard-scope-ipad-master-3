@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		317FB82775D884808154D1DB /* Pods_Scope_Mode_ipad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85811B8E2AB97604314983AB /* Pods_Scope_Mode_ipad.framework */; };
-		39D84D941CF48185009509DB /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D84D931CF48185009509DB /* CustomButton.swift */; settings = {ASSET_TAGS = (); }; };
+		7B6C79E91CF48EA700195395 /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7B6C79E71CF48EA700195395 /* Raleway-Bold.ttf */; settings = {ASSET_TAGS = (); }; };
+		7B6C79EA1CF48EA700195395 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7B6C79E81CF48EA700195395 /* Raleway-Regular.ttf */; settings = {ASSET_TAGS = (); }; };
 		7E4202FB1CE3B18500B3DE8F /* VideoTypeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4202FA1CE3B18500B3DE8F /* VideoTypeController.swift */; };
 		7E4202FD1CE3B3C400B3DE8F /* BudgetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4202FC1CE3B3C400B3DE8F /* BudgetController.swift */; };
 		7E4202FF1CE3B63B00B3DE8F /* PlatformController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4202FE1CE3B63B00B3DE8F /* PlatformController.swift */; };
@@ -20,7 +21,6 @@
 		7E4203191CE3C5A600B3DE8F /* RunningTimeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4203181CE3C5A600B3DE8F /* RunningTimeController.swift */; };
 		7E42031B1CE3C5C600B3DE8F /* SummaryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E42031A1CE3C5C600B3DE8F /* SummaryController.swift */; };
 		7E42031D1CE3C85A00B3DE8F /* ContactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E42031C1CE3C85A00B3DE8F /* ContactController.swift */; };
-		D1AF47361CF36CFC00CC0958 /* raleway in Resources */ = {isa = PBXBuildFile; fileRef = D1AF47351CF36CFC00CC0958 /* raleway */; };
 		D1E90F261CF348ED00CC3DA8 /* ThankyouController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E90F251CF348ED00CC3DA8 /* ThankyouController.swift */; };
 		F2C2E5301CE3270000F93776 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C2E52F1CE3270000F93776 /* AppDelegate.swift */; };
 		F2C2E5321CE3270000F93776 /* ProjectNameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C2E5311CE3270000F93776 /* ProjectNameController.swift */; };
@@ -49,8 +49,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		39D84D931CF48185009509DB /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		590374917110D36EC48574A6 /* Pods-Scope Mode ipad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scope Mode ipad.release.xcconfig"; path = "Pods/Target Support Files/Pods-Scope Mode ipad/Pods-Scope Mode ipad.release.xcconfig"; sourceTree = "<group>"; };
+		7B6C79E71CF48EA700195395 /* Raleway-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Bold.ttf"; sourceTree = "<group>"; };
+		7B6C79E81CF48EA700195395 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
 		7E4202FA1CE3B18500B3DE8F /* VideoTypeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoTypeController.swift; sourceTree = "<group>"; };
 		7E4202FC1CE3B3C400B3DE8F /* BudgetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudgetController.swift; sourceTree = "<group>"; };
 		7E4202FE1CE3B63B00B3DE8F /* PlatformController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatformController.swift; sourceTree = "<group>"; };
@@ -63,7 +64,6 @@
 		7E42031A1CE3C5C600B3DE8F /* SummaryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryController.swift; sourceTree = "<group>"; };
 		7E42031C1CE3C85A00B3DE8F /* ContactController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactController.swift; sourceTree = "<group>"; };
 		85811B8E2AB97604314983AB /* Pods_Scope_Mode_ipad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Scope_Mode_ipad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D1AF47351CF36CFC00CC0958 /* raleway */ = {isa = PBXFileReference; lastKnownFileType = folder; path = raleway; sourceTree = "<group>"; };
 		D1E90F251CF348ED00CC3DA8 /* ThankyouController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThankyouController.swift; sourceTree = "<group>"; };
 		E5CECC4F215E884ABF339C08 /* Pods-Scope Mode ipad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scope Mode ipad.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Scope Mode ipad/Pods-Scope Mode ipad.debug.xcconfig"; sourceTree = "<group>"; };
 		F2C2E52C1CE3270000F93776 /* Scope Mode ipad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Scope Mode ipad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -164,11 +164,11 @@
 				7E42031A1CE3C5C600B3DE8F /* SummaryController.swift */,
 				D1E90F251CF348ED00CC3DA8 /* ThankyouController.swift */,
 				F2C2E5331CE3270000F93776 /* Main.storyboard */,
-				39D84D931CF48185009509DB /* CustomButton.swift */,
 				F2C2E5381CE3270000F93776 /* LaunchScreen.storyboard */,
-				D1AF47351CF36CFC00CC0958 /* raleway */,
 				F2C2E5361CE3270000F93776 /* Assets.xcassets */,
 				F2C2E53B1CE3270000F93776 /* Info.plist */,
+				7B6C79E71CF48EA700195395 /* Raleway-Bold.ttf */,
+				7B6C79E81CF48EA700195395 /* Raleway-Regular.ttf */,
 			);
 			path = "Scope Mode ipad";
 			sourceTree = "<group>";
@@ -298,10 +298,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1AF47361CF36CFC00CC0958 /* raleway in Resources */,
 				F2C2E53A1CE3270000F93776 /* LaunchScreen.storyboard in Resources */,
+				7B6C79EA1CF48EA700195395 /* Raleway-Regular.ttf in Resources */,
 				F2C2E5371CE3270000F93776 /* Assets.xcassets in Resources */,
 				F2C2E5351CE3270000F93776 /* Main.storyboard in Resources */,
+				7B6C79E91CF48EA700195395 /* Raleway-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,7 +389,6 @@
 				7E4203191CE3C5A600B3DE8F /* RunningTimeController.swift in Sources */,
 				7E4203151CE3C55E00B3DE8F /* DeadlineController.swift in Sources */,
 				7E4202FB1CE3B18500B3DE8F /* VideoTypeController.swift in Sources */,
-				39D84D941CF48185009509DB /* CustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

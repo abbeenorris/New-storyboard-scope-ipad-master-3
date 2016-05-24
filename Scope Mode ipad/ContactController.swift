@@ -6,6 +6,7 @@ class ContactController: UIViewController {
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var phoneNumber: UITextField!
     @IBOutlet weak var nextBtn: UIBarButtonItem!
+    @IBOutlet weak var postion: UITextField!
     
     @IBOutlet weak var scrollView: UIScrollView!
     
@@ -17,9 +18,11 @@ class ContactController: UIViewController {
         companyVar = companyName.text!
         emailVar = email.text!
         phoneNumberVar = phoneNumber.text!
+        postionVar = postion.text!
         companyName.text! = companyVar
         email.text! = emailVar
         phoneNumber.text! = phoneNumberVar
+        postion.text! = postionVar
         NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillShow:"), name: UIKeyboardWillShowNotification, object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillHide:"), name: UIKeyboardWillHideNotification, object: nil)
     }
@@ -46,7 +49,7 @@ class ContactController: UIViewController {
         self.scrollView.contentInset = contentInset
     }
     func textChanged(sender: NSNotification) {
-        if companyName.hasText() && email.hasText() && phoneNumber.hasText() {
+        if companyName.hasText() && email.hasText() && postion.hasText() && phoneNumber.hasText() {
             nextBtn.enabled = true
         }
         else {
@@ -66,6 +69,7 @@ class ContactController: UIViewController {
         companyVar = companyName.text!
         emailVar = email.text!
         phoneNumberVar = phoneNumber.text!
+        postionVar = postion.text!
 
         
     }
