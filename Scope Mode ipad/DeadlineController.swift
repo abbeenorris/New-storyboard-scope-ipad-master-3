@@ -6,6 +6,7 @@ var currentSelection = deadlineVar
 class DeadlineController: UIViewController {
     
     let dateFormatter = NSDateFormatter()
+    let dateFormatter2 = NSdate()
     
     
     
@@ -23,7 +24,6 @@ class DeadlineController: UIViewController {
     }
     
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -36,11 +36,20 @@ class DeadlineController: UIViewController {
         
         deadlinePicker.minimumDate = NSDate()
         if deadlineVar != "" {
-            deadlinePicker.setDate(dateFormatter2.dateFromString(deadlineVar)!, animated: true)
+            
+            let selectedDate = dateFormatter.dateFromString(deadlineVar)
+            
+            deadlinePicker.setDate(selectedDate!, animated: true)
+            
+            deadlinePicker.date = dateFormatter2
+            
         }
         
         
+        
+        
     }
+    
     
     @IBAction func deadlinePickerAction(sender: AnyObject) {
         
