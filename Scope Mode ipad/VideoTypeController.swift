@@ -2,9 +2,6 @@ import Foundation
 import UIKit
 
 class VideoTypeController: UIViewController {
-    var projectTitleVar =  String()
-    var clientNameVar = String()
-    var videoTypeVar = String()
      override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -63,15 +60,17 @@ class VideoTypeController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
-        let projectTitle : RunningTimeController = segue.destinationViewController as! RunningTimeController
-        projectTitle.projectTitleVar = projectTitleVar
-        
-        let clientName : RunningTimeController = segue.destinationViewController as! RunningTimeController
-        clientName.clientNameVar = clientNameVar
-        
-        let videoType : RunningTimeController = segue.destinationViewController as! RunningTimeController
-        videoType.videoTypeVar = videoTypeVar
-        
+        if videoTypeVar == "Promitional" {
+            promotionalSwitch.on == true
+            
+        } else  if videoTypeVar == "Product" {
+            productSwitch.on == true
+            
+        } else  if videoTypeVar == "Testimonial" {
+            testimonialSwitch.on == true
+        } else  if videoTypeVar == "Viral" {
+            virualSwitch.on == true
+        }
         
     }
 

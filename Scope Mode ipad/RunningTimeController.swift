@@ -2,10 +2,7 @@ import Foundation
 import UIKit
 
 class RunningTimeController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
-    var projectTitleVar =  String()
-    var clientNameVar = String()
-    var videoTypeVar = String()
-    var timeVar = String()
+ 
     
     var videoRunTime = 0
     
@@ -40,8 +37,6 @@ class RunningTimeController: UIViewController, UIPickerViewDelegate, UIPickerVie
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         videoRunTime = row
         timeVar = timePicker[row]
-        
-        print(timeVar)
     }
 
     
@@ -71,17 +66,7 @@ class RunningTimeController: UIViewController, UIPickerViewDelegate, UIPickerVie
 
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let DestViewController : DeadlineController = segue.destinationViewController as! DeadlineController
-        DestViewController.projectTitleVar = projectTitleVar
         
-        let clientName : DeadlineController = segue.destinationViewController as! DeadlineController
-        clientName.clientNameVar = clientNameVar
-        
-        let videoType : DeadlineController = segue.destinationViewController as! DeadlineController
-        videoType.videoTypeVar = videoTypeVar
-        
-        let runningTime : DeadlineController = segue.destinationViewController as! DeadlineController
-        runningTime.timeVar = timeVar
         
     }
     

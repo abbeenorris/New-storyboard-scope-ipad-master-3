@@ -1,13 +1,27 @@
 import UIKit
 
+var projectTitleVar =  String()
+var clientNameVar = String()
+var videoTypeVar = String()
+var timeVar = String()
+var deadlineVar = String()
+var descriptionVar = String()
+var platformVar = String()
+var budgetVar = String()
+var partVar = String()
+var styleVar = String()
+var characterVar = String()
+var settingVar = String()
+var companyVar = String()
+var emailVar = String()
+var phoneNumberVar = String()
+
 class ProjectNameController: UIViewController {
     @IBOutlet weak var projectTextfield: UITextField!
     @IBOutlet weak var clientNameTextField: UITextField!
     @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var nextBtn: UIButton!
-    
-    var projectTitleVar = String()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,7 +31,7 @@ class ProjectNameController: UIViewController {
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillShow:"), name: UIKeyboardWillShowNotification, object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillHide:"), name: UIKeyboardWillHideNotification, object: nil)
-        projectTitleVar = projectTextfield.text!
+        
 
     }
     
@@ -60,16 +74,13 @@ class ProjectNameController: UIViewController {
     
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let projectTitle : VideoTypeController = segue.destinationViewController as! VideoTypeController
-        projectTitle.projectTitleVar = projectTextfield.text!
         
-        let clientName : VideoTypeController = segue.destinationViewController as! VideoTypeController
-        clientName.clientNameVar = clientNameTextField.text!
-        
-        
-    }
+        projectTitleVar = projectTextfield.text!
+        clientNameVar = clientNameTextField.text!
+  			
     
     
 
 }
 
+}

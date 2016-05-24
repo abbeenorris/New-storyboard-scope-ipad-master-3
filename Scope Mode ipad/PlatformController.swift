@@ -2,17 +2,7 @@ import Foundation
 import UIKit
 
 class PlatformController: UIViewController {
-    var projectTitleVar =  String()
-    var clientNameVar = String()
-    var videoTypeVar = String()
-    var timeVar = String()
-    var platformVar = String()
-    var deadlineVar = String()
-    var descriptionVar = String()
-    var partVar = String()
-    var styleVar = String()
-    var characterVar = String()
-    var settingVar = String()
+  
     
     
     @IBOutlet weak var tvSwitch: UISwitch!
@@ -20,6 +10,30 @@ class PlatformController: UIViewController {
     @IBOutlet weak var cinemaSwitch: UISwitch!
     @IBOutlet weak var eventSwitch: UISwitch!
     @IBOutlet weak var corporateSwitch: UISwitch!
+    @IBOutlet weak var websiteSwitch: UISwitch!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        if platformVar == "TV"{
+            tvSwitch.on = true
+        } else if platformVar == "Online"  {
+            onlineSwitch.on = true
+        
+        } else if platformVar == "Cinema"  {
+            cinemaSwitch.on = true
+            
+        } else if platformVar == "Event"  {
+            eventSwitch.on = true
+            
+        } else if platformVar == "Corportate"  {
+            corporateSwitch.on = true
+            
+        } else if platformVar == "Website"  {
+            websiteSwitch.on = true
+            
+        }
+    }
     
     @IBAction func tvSwitchPressed(sender: AnyObject) {
         
@@ -30,6 +44,7 @@ class PlatformController: UIViewController {
             cinemaSwitch.on = false
             eventSwitch.on = false
             corporateSwitch.on = false
+            websiteSwitch.on = false
         
         }
     }
@@ -43,6 +58,7 @@ class PlatformController: UIViewController {
             cinemaSwitch.on = false
             eventSwitch.on = false
             corporateSwitch.on = false
+            websiteSwitch.on = false
             
         }
 
@@ -58,6 +74,7 @@ class PlatformController: UIViewController {
             onlineSwitch.on = false
             eventSwitch.on = false
             corporateSwitch.on = false
+            websiteSwitch.on = false
             
         }
 
@@ -72,6 +89,7 @@ class PlatformController: UIViewController {
             cinemaSwitch.on = false
             onlineSwitch.on = false
             corporateSwitch.on = false
+            websiteSwitch.on = false
             
         }
 
@@ -86,52 +104,32 @@ class PlatformController: UIViewController {
             cinemaSwitch.on = false
             eventSwitch.on = false
             onlineSwitch.on = false
+            websiteSwitch.on = false
             
         }
 
     }
     
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-           
+    @IBAction func websiteSwitchPressed(sender: AnyObject) {
+        
+        if websiteSwitch.on {
+            
+            platformVar = "Website"
+            tvSwitch.on = false
+            cinemaSwitch.on = false
+            eventSwitch.on = false
+            onlineSwitch.on = false
+            corporateSwitch.on = false
+            
+        }
     }
     
+    
+    
+    
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let projectTitle : BudgetController = segue.destinationViewController as! BudgetController
-        projectTitle.projectTitleVar = projectTitleVar
-        
-        let clientName : BudgetController = segue.destinationViewController as! BudgetController
-        clientName.clientNameVar = clientNameVar
-        
-        
-        let videoType : BudgetController = segue.destinationViewController as! BudgetController
-        videoType.videoTypeVar = videoTypeVar
-        
-        let runningTime : BudgetController = segue.destinationViewController as! BudgetController
-        runningTime.timeVar = timeVar
-        
-        let deadline : BudgetController = segue.destinationViewController as! BudgetController
-        deadline.deadlineVar = deadlineVar
-        
-        let platform : BudgetController = segue.destinationViewController as! BudgetController
-        platform.platformVar = platformVar
-        
-        let videoDescription : BudgetController = segue.destinationViewController as! BudgetController
-        videoDescription.descriptionVar = descriptionVar
-        
-        let partProduction : BudgetController = segue.destinationViewController as! BudgetController
-        partProduction.partVar = partVar
-        
-        let style : BudgetController = segue.destinationViewController as! BudgetController
-        style.styleVar = styleVar
-        
-        let character : BudgetController = segue.destinationViewController as! BudgetController
-        character.characterVar =  characterVar
-        
-        let setting : BudgetController = segue.destinationViewController as! BudgetController
-        setting.settingVar =  settingVar
+    
       
 
         

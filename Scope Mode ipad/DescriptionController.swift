@@ -2,12 +2,7 @@ import Foundation
 import UIKit
 
 class DescriptionController: UIViewController {
-    var projectTitleVar =  String()
-    var clientNameVar = String()
-    var videoTypeVar = String()
-    var timeVar = String()
-    var deadlineVar = String()
-    var descriptionVar = String()
+  
     @IBOutlet weak var descriptionText: UITextView!
     
     @IBOutlet weak var scrollView: UIScrollView!
@@ -17,6 +12,7 @@ class DescriptionController: UIViewController {
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillShow:"), name: UIKeyboardWillShowNotification, object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillHide:"), name: UIKeyboardWillHideNotification, object: nil)
+        descriptionText.text! = descriptionVar
   
         
     }
@@ -50,23 +46,8 @@ class DescriptionController: UIViewController {
     
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let projectTitle : PartProductionController = segue.destinationViewController as! PartProductionController
-        projectTitle.projectTitleVar = projectTitleVar
         
-        let clientName : PartProductionController = segue.destinationViewController as! PartProductionController
-        clientName.clientNameVar = clientNameVar
-        
-        let videoType : PartProductionController = segue.destinationViewController as! PartProductionController
-        videoType.videoTypeVar = videoTypeVar
-        
-        let runningTime : PartProductionController = segue.destinationViewController as! PartProductionController
-        runningTime.timeVar = timeVar
-        
-        let deadline : PartProductionController = segue.destinationViewController as! PartProductionController
-        deadline.deadlineVar = deadlineVar
-        
-        let videoDescription : PartProductionController = segue.destinationViewController as! PartProductionController
-        videoDescription.descriptionVar = descriptionText.text!
-        
+        descriptionVar = descriptionText.text!
+               
     }
 }

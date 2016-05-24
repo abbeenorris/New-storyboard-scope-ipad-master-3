@@ -3,21 +3,7 @@ import UIKit
 import MessageUI
 
 class SummaryController: UIViewController, MFMailComposeViewControllerDelegate {
-    var projectTitleVar =  String()
-    var clientNameVar = String()
-    var videoTypeVar = String()
-    var timeVar = String()
-    var deadlineVar = String()
-    var descriptionVar = String()
-    var platformVar = String()
-    var budgetVar = String()
-    var partVar = String()
-    var styleVar = String()
-    var characterVar = String()
-    var settingVar = String()
-    var companyVar = String()
-    var emailVar = String()
-    var phoneNumberVar = String()
+
     
     @IBOutlet weak var projectText: UITextField!
     @IBOutlet weak var clientText: UITextField!
@@ -51,7 +37,7 @@ class SummaryController: UIViewController, MFMailComposeViewControllerDelegate {
         deadlineText.text! = deadlineVar
         descriptionText.text! = descriptionVar
         partProductionText.text! = partVar
-        styleText.text! = styleVar
+        styleText.text! = "\(liveActionVar), \(animationVar), \(mixedMediaVar)"
         charactersText.text! = characterVar
         settingText.text! = settingVar
         platformText.text! = platformVar

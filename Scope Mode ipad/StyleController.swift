@@ -1,121 +1,62 @@
 import Foundation
 import UIKit
 
+var liveActionVar = String()
+var animationVar = String()
+var mixedMediaVar = String()
 
 class StyleController: UIViewController {
-    var projectTitleVar =  String()
-    var clientNameVar = String()
-    var videoTypeVar = String()
-    var timeVar = String()
-    var deadlineVar = String()
-    var descriptionVar = String()
-    var partVar = String()
-    var styleVar = String()
-    var settingVar = String()
+  
     
+    @IBOutlet weak var liveActionBtn: UISwitch!
+    @IBOutlet weak var animationBtn: UISwitch!
+    @IBOutlet weak var mixedMediaBtn: UISwitch!
     
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-           
-    
+        
+        if liveActionVar == "Live Attion"{
+            
+            liveActionBtn.on = true
+        
+        }
+        if animationVar == "Animation"{
+            
+            animationBtn.on = true
+        }
+        
+        if mixedMediaVar == "Mixed Media"{
+            
+            mixedMediaBtn.on = true
+        }
+        
+        
     
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "LiveAction" {
-            
-            styleVar = "Live Action"
-            
-            let destViewController = segue.destinationViewController as! CharactersController
-            destViewController.projectTitleVar = projectTitleVar
-            
-            let clientName : CharactersController = segue.destinationViewController as! CharactersController
-            clientName.clientNameVar = clientNameVar
-            
-            let videoType : CharactersController = segue.destinationViewController as! CharactersController
-            videoType.videoTypeVar = videoTypeVar
-            
-            let runningTime : CharactersController = segue.destinationViewController as! CharactersController
-            runningTime.timeVar = timeVar
-            
-            let deadline : CharactersController = segue.destinationViewController as! CharactersController
-            deadline.deadlineVar = deadlineVar
-            
-            let videoDescription : CharactersController = segue.destinationViewController as! CharactersController
-            videoDescription.descriptionVar = descriptionVar
-            
-            let partProduction : CharactersController = segue.destinationViewController as! CharactersController
-            partProduction.partVar = partVar
-            
-            let style : CharactersController = segue.destinationViewController as! CharactersController
-            style.styleVar = styleVar
-        }
-        
-        if segue.identifier == "Animation" {
-            
-            styleVar = "Animation"
-            
-            let destViewController = segue.destinationViewController as! CharactersController
-            destViewController.projectTitleVar = projectTitleVar
-            
-            let clientName : CharactersController = segue.destinationViewController as! CharactersController
-            clientName.clientNameVar = clientNameVar
-            
-            let videoType : CharactersController = segue.destinationViewController as! CharactersController
-            videoType.videoTypeVar = videoTypeVar
-            
-            let runningTime : CharactersController = segue.destinationViewController as! CharactersController
-            runningTime.timeVar = timeVar
-            
-            let deadline : CharactersController = segue.destinationViewController as! CharactersController
-            deadline.deadlineVar = deadlineVar
-            
-            let videoDescription : CharactersController = segue.destinationViewController as! CharactersController
-            videoDescription.descriptionVar = descriptionVar
-            
-            let partProduction : CharactersController = segue.destinationViewController as! CharactersController
-            partProduction.partVar = partVar
-            
-            let style : CharactersController = segue.destinationViewController as! CharactersController
-            style.styleVar = styleVar
-            
-
-        }
-        
-        if segue.identifier == "MixedMedia" {
-            
-            styleVar = "Mixed Media"
-            
-            let destViewController = segue.destinationViewController as! CharactersController
-            destViewController.projectTitleVar = projectTitleVar
-            
-            let clientName : CharactersController = segue.destinationViewController as! CharactersController
-            clientName.clientNameVar = clientNameVar
-            
-            let videoType : CharactersController = segue.destinationViewController as! CharactersController
-            videoType.videoTypeVar = videoTypeVar
-            
-            let runningTime : CharactersController = segue.destinationViewController as! CharactersController
-            runningTime.timeVar = timeVar
-            
-            let deadline : CharactersController = segue.destinationViewController as! CharactersController
-            deadline.deadlineVar = deadlineVar
-            
-            let videoDescription : CharactersController = segue.destinationViewController as! CharactersController
-            videoDescription.descriptionVar = descriptionVar
-            
-            let partProduction : CharactersController = segue.destinationViewController as! CharactersController
-            partProduction.partVar = partVar
-            
-            let style : CharactersController = segue.destinationViewController as! CharactersController
-            style.styleVar = styleVar
     
-            
-            
+    @IBAction func liveActionSwitchPressed(sender: AnyObject) {
+        if liveActionBtn.on {
+        liveActionVar = "Live Action"
         }
+        
+    }
+    @IBAction func animationSwitchPressed(sender: AnyObject) {
+        if animationBtn.on{
+        animationVar = "Animation"
+        }
+    }
+    @IBAction func mixedMediaSwitchPressed(sender: AnyObject) {
+        if mixedMediaBtn.on{
+         mixedMediaVar = "Mixed Media"
+        }
+    }
+    
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         
     }
