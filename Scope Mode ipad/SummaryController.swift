@@ -29,8 +29,6 @@ class SummaryController: UIViewController, MFMailComposeViewControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
         projectText.text! = projectTitleVar
         clientText.text! = clientNameVar
         videoTypeText.text! = "\(behindSceneVar)\(digitalSwitchVar)\(documentaryVar)\(filmVar)\(howToVar)\(introVar)\(lectureVar)\(miniDocVar)\(musicVideoVar)\(psaVar)\(shortFilmVar)\(showVar)\(socialExperimentVar)\(stuntVar)\(teaserVar)\(trailerVar)\(webEpisodeVar)"
@@ -59,7 +57,6 @@ class SummaryController: UIViewController, MFMailComposeViewControllerDelegate {
     @IBAction func projectEdit(sender: AnyObject) {
         let projectTitleVar = projectText.text!
         
-        print(projectTitleVar)
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
@@ -142,8 +139,11 @@ class SummaryController: UIViewController, MFMailComposeViewControllerDelegate {
     func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {
         controller.dismissViewControllerAnimated(true, completion: nil)
         
+        
+        
     }
+    
     //end email
     
-    
+   
 }

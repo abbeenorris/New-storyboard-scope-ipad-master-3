@@ -1660,7 +1660,7 @@
                                 <connections>
                                     <action selector="sendEmailButtonTapped:" destination="c7x-48-w2Y" eventType="touchUpInside" id="S6H-fo-xzu"/>
                                     <action selector="sendEmailButtonTapped:" destination="QMS-0f-ith" eventType="touchUpInside" id="qzl-9o-6QL"/>
-                                    <segue destination="jI8-RH-jte" kind="show" id="Uax-Ax-kqO"/>
+                                    <segue destination="jI8-RH-jte" kind="show" identifier="lastSegue" id="Uax-Ax-kqO"/>
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAj-f6-CEh">
@@ -2228,6 +2228,7 @@
                             <constraint firstItem="vaj-JG-580" firstAttribute="top" secondItem="Dd1-IR-aHO" secondAttribute="bottom" id="yaE-2G-Wqd"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="dTO-bR-SLl"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                 </viewController>

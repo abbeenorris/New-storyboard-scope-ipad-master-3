@@ -26,7 +26,6 @@ class ProjectNameController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("help")
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "textChanged:", name: UITextFieldTextDidChangeNotification, object: nil)
         nextBtn.enabled = false
