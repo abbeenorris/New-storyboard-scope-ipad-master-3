@@ -33,12 +33,12 @@ class SummaryController: UIViewController, MFMailComposeViewControllerDelegate {
         
         projectText.text! = projectTitleVar
         clientText.text! = clientNameVar
-        videoTypeText.text! = videoTypeVar
+        videoTypeText.text! = "\(behindSceneVar)\(digitalSwitchVar)\(documentaryVar)\(filmVar)\(howToVar)\(introVar)\(lectureVar)\(miniDocVar)\(musicVideoVar)\(psaVar)\(shortFilmVar)\(showVar)\(socialExperimentVar)\(stuntVar)\(teaserVar)\(trailerVar)\(webEpisodeVar)"
         runningTimeText.text! = timeVar
         deadlineText.text! = deadlineVar
         descriptionText.text! = descriptionVar
-        partProductionText.text! = partVar
-        styleText.text! = "\(liveActionVar), \(animationVar), \(mixedMediaVar)"
+        partProductionText.text! = "\(liveSoundVar)\(musicVar)\(voiceOverVar)"
+        styleText.text! = "\(liveActionVar)\(animationVar)\(mixedMediaVar)"
         charactersText.text! = characterVar
         settingText.text! = settingVar
         platformText.text! = platformVar

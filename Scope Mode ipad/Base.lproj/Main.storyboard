@@ -409,7 +409,6 @@
                                 <color key="onTintColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="documentarySwitchPressed:" destination="kZZ-4M-26h" eventType="valueChanged" id="X33-fI-O9q"/>
-                                    <action selector="testimonialSwitchPressed:" destination="kZZ-4M-26h" eventType="valueChanged" id="ZhA-Sd-f8Z"/>
                                 </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Vsj-l3-Nyx">
@@ -417,7 +416,6 @@
                                 <color key="onTintColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="digitalSwitchPressed:" destination="kZZ-4M-26h" eventType="valueChanged" id="vA1-Eh-A7f"/>
-                                    <action selector="productSwitchPressed:" destination="kZZ-4M-26h" eventType="valueChanged" id="Ppk-gG-Qw7"/>
                                 </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TKS-Ug-jHA">
@@ -425,7 +423,6 @@
                                 <color key="onTintColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="behindSceneSwitchPressed:" destination="kZZ-4M-26h" eventType="valueChanged" id="Rnj-0L-Y0I"/>
-                                    <action selector="promotionalSwitchPressed:" destination="kZZ-4M-26h" eventType="valueChanged" id="3mJ-e5-CpH"/>
                                 </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What kind of video are you after?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBY-bm-TII">

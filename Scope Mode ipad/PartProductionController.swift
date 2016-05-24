@@ -1,6 +1,8 @@
 import Foundation
 import UIKit
-
+var liveSoundVar = String()
+var musicVar = String()
+var voiceOverVar = String()
 class PartProductionController: UIViewController {
     
     
@@ -15,11 +17,11 @@ class PartProductionController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if partVar == "Live Sound"{
+        if liveSoundVar == "Live Sound, "{
             liveSoundSwitch.on = true
-        } else if partVar == "Music"{
+        } else if musicVar == "Music, "{
             musicSwitch.on = true
-        } else if partVar == "Voice Over"{
+        } else if voiceOverVar == "Voice Over"{
             voiceoverSwitch.on = true
         }
         
@@ -32,25 +34,19 @@ class PartProductionController: UIViewController {
     
     @IBAction func liveSoundSwitchPressed(sender: AnyObject) {
         if liveSoundSwitch.on{
-            partVar = "Live Sound"
-            musicSwitch.on = false
-            voiceoverSwitch.on = false
+            liveSoundVar = "Live Sound, "
         }
     }
     
     @IBAction func musicSwitchPressed(sender: AnyObject) {
         if musicSwitch.on{
-            partVar = "Music"
-            liveSoundSwitch.on = false
-            voiceoverSwitch.on = false
+            musicVar = "Music, "
         }
     }
     
     @IBAction func voiceoverSwitchPressed(sender: AnyObject) {
         if voiceoverSwitch.on{
-            partVar = "Voice Over"
-            musicSwitch.on = false
-            liveSoundSwitch.on = false
+            voiceOverVar = "Voice Over"
         }
     }
 

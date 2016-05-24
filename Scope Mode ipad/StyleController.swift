@@ -18,12 +18,12 @@ class StyleController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if liveActionVar == "Live Action"{
+        if liveActionVar == "Live Action, "{
             
             liveActionBtn.on = true
         
         }
-        if animationVar == "Animation"{
+        if animationVar == "Animation, "{
             
             animationBtn.on = true
         }
@@ -40,13 +40,13 @@ class StyleController: UIViewController {
     
     @IBAction func liveActionSwitchPressed(sender: AnyObject) {
         if liveActionBtn.on {
-        liveActionVar = "Live Action"
+        liveActionVar = "Live Action, "
         }
         
     }
     @IBAction func animationSwitchPressed(sender: AnyObject) {
         if animationBtn.on{
-        animationVar = "Animation"
+        animationVar = "Animation, "
         }
     }
     @IBAction func mixedMediaSwitchPressed(sender: AnyObject) {
