@@ -139,7 +139,7 @@
                                     <constraint firstItem="Ybd-7c-OAe" firstAttribute="centerY" secondItem="q52-TK-pRn" secondAttribute="centerY" id="sOX-rG-09C"/>
                                 </constraints>
                             </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cN-wM-sPQ">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cN-wM-sPQ">
                                 <rect key="frame" x="179" y="116" width="666" height="508"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your client name?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJF-ES-wRQ">
@@ -1130,7 +1130,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWH-Jx-aXf">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWH-Jx-aXf">
                                 <rect key="frame" x="199" y="109" width="627" height="475"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What location would you like to use?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rbK-17-mDK">
@@ -1657,7 +1657,7 @@
                                     <constraint firstItem="vxo-wu-8gI" firstAttribute="top" secondItem="pwf-Pq-j5G" secondAttribute="top" constant="11" id="maU-ME-lD0"/>
                                 </constraints>
                             </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cAj-f6-CEh">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAj-f6-CEh">
                                 <rect key="frame" x="45" y="106" width="935" height="533"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KpE-Ps-Vuz">
@@ -2362,7 +2362,14 @@
                                     <constraint firstItem="WsO-he-2uR" firstAttribute="top" secondItem="Diy-C4-Kgc" secondAttribute="top" constant="11" id="VLb-f3-8Qk"/>
                                 </constraints>
                             </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9dE-ES-wtH">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bar-6" translatesAutoresizingMaskIntoConstraints="NO" id="See-OF-5Hf">
+                                <rect key="frame" x="420" y="662" width="171" height="98"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="98" id="0Jb-ZD-ZHr"/>
+                                    <constraint firstAttribute="width" constant="171" id="wAI-wk-Gst"/>
+                                </constraints>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9dE-ES-wtH">
                                 <rect key="frame" x="132" y="143" width="760" height="427"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Give us a brief description of your project" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTE-R0-NtU">
@@ -2396,13 +2403,6 @@
                                     <constraint firstItem="zfX-41-yrE" firstAttribute="top" secondItem="qTE-R0-NtU" secondAttribute="bottom" constant="54" id="hDC-ZW-aJZ"/>
                                 </constraints>
                             </scrollView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bar-6" translatesAutoresizingMaskIntoConstraints="NO" id="See-OF-5Hf">
-                                <rect key="frame" x="420" y="662" width="171" height="98"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="98" id="0Jb-ZD-ZHr"/>
-                                    <constraint firstAttribute="width" constant="171" id="wAI-wk-Gst"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
