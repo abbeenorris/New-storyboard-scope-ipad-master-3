@@ -16,6 +16,7 @@ class DeadlineController: UIViewController {
     func setDate() {
         
         dateFormatter.dateStyle = NSDateFormatterStyle.ShortStyle
+        dateFormatter.dateFormat = "dd-MM-yy"
         
         
         
@@ -28,7 +29,7 @@ class DeadlineController: UIViewController {
         super.viewDidLoad()
         
         let dateFormatter2 = NSDateFormatter()
-        dateFormatter2.dateFormat = "M-dd-yy"
+        dateFormatter2.dateFormat = "dd-MM-yy"
         
         
         
