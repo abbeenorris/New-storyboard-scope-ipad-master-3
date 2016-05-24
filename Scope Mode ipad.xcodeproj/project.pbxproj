@@ -22,6 +22,12 @@
 		7E42031B1CE3C5C600B3DE8F /* SummaryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E42031A1CE3C5C600B3DE8F /* SummaryController.swift */; };
 		7E42031D1CE3C85A00B3DE8F /* ContactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E42031C1CE3C85A00B3DE8F /* ContactController.swift */; };
 		D1E90F261CF348ED00CC3DA8 /* ThankyouController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E90F251CF348ED00CC3DA8 /* ThankyouController.swift */; };
+		EB2119F91CF4AFFC00248AED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2119F81CF4AFFC00248AED /* ViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		EB2119FB1CF4B04500248AED /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2119FA1CF4B04500248AED /* CustomButton.swift */; settings = {ASSET_TAGS = (); }; };
+		EB2119FD1CF4B05A00248AED /* NoAirplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2119FC1CF4B05A00248AED /* NoAirplay.swift */; settings = {ASSET_TAGS = (); }; };
+		EB2119FF1CF4B06A00248AED /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2119FE1CF4B06A00248AED /* DetailView.swift */; settings = {ASSET_TAGS = (); }; };
+		EB211A011CF4B09600248AED /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB211A001CF4B09600248AED /* VideoView.swift */; settings = {ASSET_TAGS = (); }; };
+		EB211A031CF4B0A500248AED /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB211A021CF4B0A500248AED /* Video.swift */; settings = {ASSET_TAGS = (); }; };
 		F2C2E5301CE3270000F93776 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C2E52F1CE3270000F93776 /* AppDelegate.swift */; };
 		F2C2E5321CE3270000F93776 /* ProjectNameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C2E5311CE3270000F93776 /* ProjectNameController.swift */; };
 		F2C2E5351CE3270000F93776 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2C2E5331CE3270000F93776 /* Main.storyboard */; };
@@ -66,6 +72,12 @@
 		85811B8E2AB97604314983AB /* Pods_Scope_Mode_ipad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Scope_Mode_ipad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1E90F251CF348ED00CC3DA8 /* ThankyouController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThankyouController.swift; sourceTree = "<group>"; };
 		E5CECC4F215E884ABF339C08 /* Pods-Scope Mode ipad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scope Mode ipad.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Scope Mode ipad/Pods-Scope Mode ipad.debug.xcconfig"; sourceTree = "<group>"; };
+		EB2119F81CF4AFFC00248AED /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EB2119FA1CF4B04500248AED /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		EB2119FC1CF4B05A00248AED /* NoAirplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoAirplay.swift; sourceTree = "<group>"; };
+		EB2119FE1CF4B06A00248AED /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		EB211A001CF4B09600248AED /* VideoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		EB211A021CF4B0A500248AED /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		F2C2E52C1CE3270000F93776 /* Scope Mode ipad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Scope Mode ipad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2C2E52F1CE3270000F93776 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2C2E5311CE3270000F93776 /* ProjectNameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectNameController.swift; sourceTree = "<group>"; };
@@ -150,6 +162,12 @@
 			isa = PBXGroup;
 			children = (
 				F2C2E52F1CE3270000F93776 /* AppDelegate.swift */,
+				EB2119F81CF4AFFC00248AED /* ViewController.swift */,
+				EB2119FA1CF4B04500248AED /* CustomButton.swift */,
+				EB2119FC1CF4B05A00248AED /* NoAirplay.swift */,
+				EB2119FE1CF4B06A00248AED /* DetailView.swift */,
+				EB211A001CF4B09600248AED /* VideoView.swift */,
+				EB211A021CF4B0A500248AED /* Video.swift */,
 				F2C2E5311CE3270000F93776 /* ProjectNameController.swift */,
 				7E4202FA1CE3B18500B3DE8F /* VideoTypeController.swift */,
 				7E4203181CE3C5A600B3DE8F /* RunningTimeController.swift */,
@@ -375,13 +393,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB2119F91CF4AFFC00248AED /* ViewController.swift in Sources */,
+				EB2119FF1CF4B06A00248AED /* DetailView.swift in Sources */,
 				7E4202FD1CE3B3C400B3DE8F /* BudgetController.swift in Sources */,
+				EB2119FD1CF4B05A00248AED /* NoAirplay.swift in Sources */,
 				7E42030D1CE3C48900B3DE8F /* CharactersController.swift in Sources */,
 				F2C2E5321CE3270000F93776 /* ProjectNameController.swift in Sources */,
+				EB2119FB1CF4B04500248AED /* CustomButton.swift in Sources */,
 				7E4203031CE3B81B00B3DE8F /* StyleController.swift in Sources */,
 				7E42031D1CE3C85A00B3DE8F /* ContactController.swift in Sources */,
+				EB211A031CF4B0A500248AED /* Video.swift in Sources */,
 				7E4203011CE3B6F300B3DE8F /* DescriptionController.swift in Sources */,
 				D1E90F261CF348ED00CC3DA8 /* ThankyouController.swift in Sources */,
+				EB211A011CF4B09600248AED /* VideoView.swift in Sources */,
 				F2C2E5301CE3270000F93776 /* AppDelegate.swift in Sources */,
 				7E42031B1CE3C5C600B3DE8F /* SummaryController.swift in Sources */,
 				7E4202FF1CE3B63B00B3DE8F /* PlatformController.swift in Sources */,
