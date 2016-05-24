@@ -4,4 +4,4 @@
 4. values don't stay ✔️
 5. sam's good looks
 6. keep data from picker view
-7. 
+7. Picker only gets data when touched, set the var to the first thing in the picker when view did load
