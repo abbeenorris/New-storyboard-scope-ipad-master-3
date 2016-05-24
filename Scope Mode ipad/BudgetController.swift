@@ -10,7 +10,7 @@ class BudgetController: UIViewController {
     
     @IBAction func BudgetChanged(sender: AnyObject) {
         let currentlVaule = round(budgetSlider.value / step) * step
-        budgetLabel.text = "£\(currentlVaule)"
+        budgetLabel.text = "Up to £\(currentlVaule)0"
         budgetVar = budgetLabel.text!
     }
     override func viewDidLoad() {
